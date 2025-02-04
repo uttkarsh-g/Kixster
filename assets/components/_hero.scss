@@ -1,0 +1,42 @@
+.hero {
+  width: $f;
+  height: $vf;
+  overflow: hidden;
+  .title {
+    height: calc(100vh - 300px);
+    @include cf;
+    h1 {
+      text-align: center;
+      font-size: 22vw;
+      font-family: $head;
+    }
+  }
+  .btn {
+    height: 230px;
+    width: $f;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    .btns {
+      display: flex;
+      gap: 20px;
+      .box {
+        height: 120px;
+        width: 180px;
+      }
+    }
+  }
+  .scrol {
+    height: 50px;
+    @include cf;
+    flex-direction: column;
+    p {
+      font-size: 20px;
+    }
+    div {
+      width: 2px;
+      height: 25px;
+      background-color: black;
+    }
+  }
+}

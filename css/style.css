@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.stop {
+  overflow: hidden;
+}
+.stop .overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.719);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: fixed;
+}
+
+.mact #t {
+  -webkit-transform: translate(0, 11px) rotate(-45deg);
+          transform: translate(0, 11px) rotate(-45deg);
+}
+.mact #b {
+  -webkit-transform: translate(0, -5px) rotate(45deg);
+          transform: translate(0, -5px) rotate(45deg);
+}
+
+.grey {
+  background-color: #cecece;
+  color: #fff;
+}
+
+.green {
+  background-color: #93ca00;
+  color: #1e4255;
+}
+
+.red {
+  background-color: #b10728;
+  color: #fff;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  padding: 0 50px;
+  z-index: 99;
+}
+nav #navbar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav #navbar h1 {
+  font-family: "Inter", serif;
+  font-weight: 500;
+  font-size: 40px;
+  color: #000;
+  position: relative;
+}
+nav #navbar .menu {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 50;
+}
+nav #navbar .menu #t,
+nav #navbar .menu #b {
+  width: 100%;
+  height: 5px;
+  border-radius: 50px;
+  background-color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+nav #navbar .hamburger {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  max-width: 350px;
+  width: 100%;
+  z-index: 15;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+nav #navbar .hamburger a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Inter", serif;
+}
+nav #navbar .active {
+  position: absolute;
+  right: 0;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.hero .title {
+  height: calc(100vh - 300px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .title h1 {
+  text-align: center;
+  font-size: 22vw;
+  font-family: "Inter", serif;
+}
+.hero .btn {
+  height: 230px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.hero .btn .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+.hero .btn .btns .box {
+  height: 120px;
+  width: 180px;
+}
+.hero .scrol {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.hero .scrol p {
+  font-size: 20px;
+}
+.hero .scrol div {
+  width: 2px;
+  height: 25px;
+  background-color: black;
+}

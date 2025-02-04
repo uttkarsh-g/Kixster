@@ -1,0 +1,66 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100px;
+  padding: 0 50px;
+  z-index: 99;
+  #navbar {
+    width: $f;
+    height: $f;
+    @include ch;
+    justify-content: space-between;
+    h1 {
+      font-family: $head;
+      font-weight: 500;
+      font-size: 40px;
+      color: $black;
+      position: relative;
+    }
+    .menu {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      @include ch;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      z-index: 50;
+
+      #t,
+      #b {
+        @include m;
+        transition: 0.5s;
+      }
+    }
+
+    .hamburger {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      height: $vf;
+      display: flex;
+      justify-content: end;
+      transition: 0.5s;
+      max-width: 350px;
+      width: 100%;
+      z-index: 15;
+
+      @include cf;
+      flex-direction: column;
+      gap: 50px;
+      a {
+        text-decoration: none;
+        color: $white;
+        font-size: 40px;
+        font-family: $head;
+      }
+    }
+    .active {
+      position: absolute;
+      right: 0;
+    }
+  }
+}
