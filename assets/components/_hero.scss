@@ -2,6 +2,7 @@
   width: $f;
   height: $vf;
   overflow: hidden;
+  position: relative;
   .title {
     height: calc(100vh - 300px);
     @include cf;
@@ -11,32 +12,101 @@
       font-family: $head;
     }
   }
+  .imge {
+    position: absolute;
+    width: $f;
+    height: $vf;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    @include cf;
+    .img {
+      position: absolute;
+      width: $f;
+      height: $vf;
+      @include cf;
+      transition: 0.5s all ease-in-out;
+      img {
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+  .air {
+    img {
+      transform: translate(-10%, 0) rotate(-22deg);
+      height: 50%;
+    }
+  }
+  .sport {
+    img {
+      transform: translate(0, 10%) rotate(10deg);
+      height: 100%;
+    }
+  }
+  .jorden {
+    img {
+      transform: translate(-10%, 0) rotate(-22deg);
+      height: 55%;
+    }
+  }
   .btn {
     height: 230px;
     width: $f;
     display: flex;
     align-items: end;
     justify-content: end;
+    padding: 0 50px;
+    position: relative;
+    z-index: 5;
     .btns {
       display: flex;
       gap: 20px;
       .box {
-        height: 120px;
-        width: 180px;
+        height: 50px;
+        width: 80px;
+        @include cf;
+
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
       }
     }
   }
+  .a {
+    @include img;
+  }
+  .s {
+    transform: translate(0, 15%) rotate(40deg);
+    height: 120%;
+  }
+  .j {
+    @include img;
+  }
+
   .scrol {
     height: 50px;
     @include cf;
     flex-direction: column;
     p {
       font-size: 20px;
+      font-family: $head;
+      color: $black;
+      font-weight: 500;
     }
-    div {
-      width: 2px;
+    .bars {
+      width: 3px;
       height: 25px;
-      background-color: black;
+      background-color: rgba(0, 0, 0, 0.222);
+      position: relative;
+      overflow: hidden;
+      .bar {
+        position: absolute;
+        top: -25px;
+        width: $f;
+        height: $f;
+        background-color: black;
+      }
     }
   }
 }

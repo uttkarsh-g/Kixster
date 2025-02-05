@@ -37,3 +37,8 @@ $f: 100%;
   @include ch;
   justify-content: center;
 }
+@mixin img {
+  width: 100%;
+  height: 70%;
+  object-fit: contain;
+}

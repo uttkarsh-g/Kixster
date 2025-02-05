@@ -9,6 +9,8 @@
 html,
 body {
   scroll-behavior: smooth;
+  -webkit-transition: 0.5s all ease-in;
+  transition: 0.5s all ease-in;
 }
 
 .stop {
@@ -21,6 +23,7 @@ body {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   position: fixed;
+  z-index: 5;
 }
 
 .mact #t {
@@ -76,7 +79,42 @@ nav #navbar h1 {
   color: #000;
   position: relative;
 }
-nav #navbar .menu {
+nav #navbar .cartanmenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+nav #navbar .cartanmenu .cart {
+  position: relative;
+  font-size: 35px;
+  color: #000;
+  cursor: pointer;
+}
+nav #navbar .cartanmenu .cart .itemm {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.937);
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+}
+nav #navbar .cartanmenu .menu {
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -97,8 +135,8 @@ nav #navbar .menu {
   position: relative;
   z-index: 50;
 }
-nav #navbar .menu #t,
-nav #navbar .menu #b {
+nav #navbar .cartanmenu .menu #t,
+nav #navbar .cartanmenu .menu #b {
   width: 100%;
   height: 5px;
   border-radius: 50px;
@@ -150,6 +188,7 @@ nav #navbar .active {
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  position: relative;
 }
 .hero .title {
   height: calc(100vh - 300px);
@@ -168,6 +207,60 @@ nav #navbar .active {
   font-size: 22vw;
   font-family: "Inter", serif;
 }
+.hero .imge {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.hero .imge .img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+.hero .imge .img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center;
+     object-position: center;
+}
+.hero .air img {
+  -webkit-transform: translate(-10%, 0) rotate(-22deg);
+          transform: translate(-10%, 0) rotate(-22deg);
+  height: 50%;
+}
+.hero .sport img {
+  -webkit-transform: translate(0, 10%) rotate(10deg);
+          transform: translate(0, 10%) rotate(10deg);
+  height: 100%;
+}
+.hero .jorden img {
+  -webkit-transform: translate(-10%, 0) rotate(-22deg);
+          transform: translate(-10%, 0) rotate(-22deg);
+  height: 55%;
+}
 .hero .btn {
   height: 230px;
   width: 100%;
@@ -180,6 +273,9 @@ nav #navbar .active {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  padding: 0 50px;
+  position: relative;
+  z-index: 5;
 }
 .hero .btn .btns {
   display: -webkit-box;
@@ -188,8 +284,38 @@ nav #navbar .active {
   gap: 20px;
 }
 .hero .btn .btns .box {
-  height: 120px;
-  width: 180px;
+  height: 50px;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
+}
+.hero .a {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.hero .s {
+  -webkit-transform: translate(0, 15%) rotate(40deg);
+          transform: translate(0, 15%) rotate(40deg);
+  height: 120%;
+}
+.hero .j {
+  width: 100%;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero .scrol {
   height: 50px;
@@ -209,9 +335,25 @@ nav #navbar .active {
 }
 .hero .scrol p {
   font-size: 20px;
+  font-family: "Inter", serif;
+  color: #000;
+  font-weight: 500;
 }
-.hero .scrol div {
-  width: 2px;
+.hero .scrol .bars {
+  width: 3px;
   height: 25px;
+  background-color: rgba(0, 0, 0, 0.222);
+  position: relative;
+  overflow: hidden;
+}
+.hero .scrol .bars .bar {
+  position: absolute;
+  top: -25px;
+  width: 100%;
+  height: 100%;
   background-color: black;
+}
+
+.about {
+  height: 100vh;
 }

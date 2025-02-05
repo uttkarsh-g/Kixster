@@ -1,5 +1,6 @@
 {
   "name": "kixster",
+  "type": "module",
   "version": "1.0.0",
   "scripts": {
     "start": "parcel index.html",
@@ -10,5 +11,8 @@
   "description": "",
   "devDependencies": {
     "parcel": "^2.13.3"
+  },
+  "dependencies": {
+    "gsap": "^3.12.7"
   }
 }
