@@ -7,29 +7,29 @@ const mouse = document.querySelector('.mm');
 
 // Mouse Follower
 
-function move(x, y) {
-  mouse.style.left = x - 10 + 'px';
-  mouse.style.top = y - 8 + 'px';
-}
-const hide = () => {
-  mouse.style.opacity = '0';
-};
-const show = () => {
-  mouse.style.opacity = 1;
-};
-b.addEventListener('mouseenter', show);
-b.addEventListener('mouseleave', hide);
-b.addEventListener('mousemove', (arg) => {
-  move(arg.x, arg.y);
-});
+// function move(x, y) {
+//   mouse.style.left = x - 10 + 'px';
+//   mouse.style.top = y - 8 + 'px';
+// }
+// const hide = () => {
+//   mouse.style.opacity = '0';
+// };
+// const show = () => {
+//   mouse.style.opacity = 1;
+// };
+// b.addEventListener('mouseenter', show);
+// b.addEventListener('mouseleave', hide);
+// b.addEventListener('mousemove', (arg) => {
+//   move(arg.x, arg.y);
+// });
 
-// mobile touch
-b.addEventListener('touchstart', show);
-b.addEventListener('touchmove', (e) => {
-  const touch = e.touches[0];
-  move(touch.clientX, touch.clientY);
-});
-b.addEventListener('touchend', hide);
+// // mobile touch
+// b.addEventListener('touchstart', show);
+// b.addEventListener('touchmove', (e) => {
+//   const touch = e.touches[0];
+//   move(touch.clientX, touch.clientY);
+// });
+// b.addEventListener('touchend', hide);
 
 //Hamburger
 

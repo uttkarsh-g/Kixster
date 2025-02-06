@@ -523,6 +523,7 @@ nav #navbar .active {
   font-size: 5vw;
   font-family: "Inter", serif;
   margin-bottom: 50px;
+  text-transform: capitalize;
 }
 .about .la .cnt p {
   font-size: 30px;
@@ -533,11 +534,40 @@ nav #navbar .active {
   color: #000;
   font-weight: 900;
 }
-.about .aa {
-  background-color: aquamarine;
+.about .aa .cnt {
+  padding: 0 100px;
 }
-.about .fa {
-  background-color: bisque;
+.about .aa .cnt h2 {
+  color: #000;
+  font-size: 5vw;
+  font-family: "Inter", serif;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+.about .aa .cnt p {
+  font-size: 30px;
+  font-family: "Mukta", serif;
+}
+.about .fa .cnt {
+  padding: 0 100px;
+}
+.about .fa .cnt h2 {
+  color: #000;
+  font-size: 5vw;
+  font-family: "Inter", serif;
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+.about .fa .cnt p {
+  font-size: 30px;
+  font-family: "Mukta", serif;
+}
+
+.star {
+  font-weight: 900;
+  color: #000;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .shop {

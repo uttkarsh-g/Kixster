@@ -3,7 +3,7 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-// hero
+// // hero
 
 gsap.from('.title h1', {
   delay: 0.5,
@@ -39,7 +39,7 @@ gsap.to('.title', {
 });
 
 gsap.to('.btn', {
-  x: '25%',
+  x: '10%',
   scrollTrigger: {
     trigger: '.btn',
     scroller: 'body',
@@ -49,11 +49,6 @@ gsap.to('.btn', {
   },
 });
 
-gsap.from('.btn', {
-  x: 100,
-  opacity: 0,
-  delay: 2,
-});
 gsap.from('.scrol', {
   opacity: 0,
   delay: 2,
@@ -65,16 +60,52 @@ gsap.to('.bar', {
   yoyo: true,
 });
 
-// about section
-const hori = gsap.utils.toArray('#about .h');
+// // about section
+let mm = gsap.matchMedia();
 
-gsap.to(hori, {
-  xPercent: -100 * (hori.length - 1),
-  delay: 2,
-  scrollTrigger: {
-    trigger: '#about',
-    pin: true,
-    scrub: 1,
-    end: '+=3500',
-  },
+mm.add('(min-width: 600px)', () => {
+  const hori = gsap.utils.toArray('#about .h');
+
+  gsap.to(hori, {
+    xPercent: -100 * (hori.length - 1),
+    delay: 2,
+    scrollTrigger: {
+      trigger: '#about',
+      pin: true,
+      scrub: 1,
+      end: '+=3500',
+    },
+  });
+
+  gsap.from('.la', {
+    y: 50,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.la',
+      scroller: 'body',
+      start: '0% 30%',
+      end: '10% 20%',
+      scrub: 3,
+    },
+  });
+  gsap.from('.aa', {
+    x: 500,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.aa',
+      scroller: 'body',
+      start: '80% 30%',
+      scrub: 3,
+    },
+  });
+  gsap.from('.fa', {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '.fa',
+      scroller: 'body',
+      start: '2055px 30%',
+      end: '+=3500',
+      scrub: 3,
+    },
+  });
 });

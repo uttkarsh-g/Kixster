@@ -14,10 +14,7 @@
     .cnt {
       padding: 0 100px;
       h2 {
-        color: $black;
-        font-size: 5vw;
-        font-family: $head;
-        margin-bottom: 50px;
+        @include head;
       }
       p {
         font-size: 30px;
@@ -31,9 +28,33 @@
     }
   }
   .aa {
-    background-color: aquamarine;
+    .cnt {
+      padding: 0 100px;
+      h2 {
+        @include head;
+      }
+      p {
+        font-size: 30px;
+        font-family: $para;
+      }
+    }
   }
   .fa {
-    background-color: bisque;
+    .cnt {
+      padding: 0 100px;
+      h2 {
+        @include head;
+      }
+      p {
+        font-size: 30px;
+        font-family: $para;
+      }
+    }
   }
+}
+.star {
+  font-weight: 900;
+  color: $black;
+  text-align: center;
+  text-transform: capitalize;
 }
