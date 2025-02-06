@@ -86,3 +86,37 @@ nav {
     }
   }
 }
+.mact {
+  #t {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  #b {
+    transform: translate(0, -5px) rotate(45deg);
+  }
+}
+
+@media (max-width: 500px) {
+  nav {
+    padding: 0 20px;
+    #navbar {
+      h1 {
+        font-size: 35px;
+      }
+      .cartanmenu {
+        gap: 10px;
+        .cart {
+          font-size: 30px;
+          .itemm {
+            width: 18px;
+            height: 18px;
+            font-size: 15px;
+          }
+        }
+        .menu {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+  }
+}

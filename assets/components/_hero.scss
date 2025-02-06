@@ -110,3 +110,108 @@
     }
   }
 }
+
+@media (max-width: 490px) {
+  .hero {
+    .air {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 25%;
+      }
+    }
+    .sport {
+      img {
+        height: 50%;
+      }
+    }
+    .jorden {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 25%;
+      }
+    }
+    .btn {
+      height: 220px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+      .btns {
+        .box {
+          img {
+            user-select: none;
+          }
+        }
+      }
+    }
+    .scrol {
+      p {
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media (min-width: 490px) and (max-width: 768px) {
+  .hero {
+    .air {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 30%;
+      }
+    }
+    .sport {
+      img {
+        height: 60%;
+      }
+    }
+    .jorden {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 30%;
+      }
+    }
+    .btn {
+      height: 220px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+      .btns {
+        .box {
+          img {
+            user-select: none;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero {
+    .air {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 35%;
+      }
+    }
+    .sport {
+      img {
+        height: 65%;
+      }
+    }
+    .jorden {
+      img {
+        transform: translate(-8%, 0) rotate(-22deg);
+        height: 35%;
+      }
+    }
+    .btn {
+      height: 220px;
+      padding: 0 20px;
+      margin-bottom: 20px;
+      .btns {
+        .box {
+          img {
+            user-select: none;
+          }
+        }
+      }
+    }
+  }
+}

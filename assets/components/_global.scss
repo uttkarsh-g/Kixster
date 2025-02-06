@@ -8,6 +8,7 @@ html,
 body {
   scroll-behavior: smooth;
   transition: 0.5s all ease-in;
+  position: relative;
 }
 .stop {
   overflow: hidden;
@@ -21,11 +22,17 @@ body {
   }
 }
 
-.mact {
-  #t {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  #b {
-    transform: translate(0, -5px) rotate(45deg);
-  }
+.mm {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  top: 0;
+  left: 0;
+  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  z-index: 999999;
+  user-select: none;
+  pointer-events: none;
+  opacity: 0;
 }

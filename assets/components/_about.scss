@@ -1,4 +1,39 @@
 .about {
-  height: 100vh;
-  //   background-color: black;
+  width: $f;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .la,
+  .aa,
+  .fa {
+    @include f;
+    @include cf;
+    flex-shrink: 0;
+  }
+  .la {
+    .cnt {
+      padding: 0 100px;
+      h2 {
+        color: $black;
+        font-size: 5vw;
+        font-family: $head;
+        margin-bottom: 50px;
+      }
+      p {
+        font-size: 30px;
+        font-family: $para;
+        #bold {
+          font-size: 40px;
+          color: $black;
+          font-weight: 900;
+        }
+      }
+    }
+  }
+  .aa {
+    background-color: aquamarine;
+  }
+  .fa {
+    background-color: bisque;
+  }
 }

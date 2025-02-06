@@ -9,6 +9,12 @@ $blue: #1e4255;
 $vf: 100vh;
 $f: 100%;
 
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .grey {
   background-color: $grey;
   color: $white;
@@ -20,6 +26,10 @@ $f: 100%;
 .red {
   background-color: $red;
   color: $white;
+}
+@mixin f {
+  height: $vf;
+  width: $f;
 }
 @mixin m {
   width: 100%;
