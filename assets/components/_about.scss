@@ -58,3 +58,89 @@
   text-align: center;
   text-transform: capitalize;
 }
+
+@media (max-width: 769px) {
+  .about {
+    width: $f;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    .la,
+    .aa,
+    .fa {
+      @include fm;
+      @include cf;
+      flex-shrink: 0;
+    }
+    .la {
+      .cnt {
+        padding: 30px 20px;
+        h2 {
+          @include headm;
+        }
+        p {
+          font-size: 16px;
+          font-family: $para;
+          #bold {
+            font-size: 30px;
+            color: $black;
+            font-weight: 900;
+          }
+        }
+      }
+    }
+    .aa,
+    .fa {
+      .cnt {
+        padding: 0 20px;
+        h2 {
+          @include headm;
+        }
+        p {
+          @include mt;
+          @include p;
+        }
+      }
+    }
+  }
+  .star {
+    font-weight: 900;
+    color: $black;
+    text-align: center;
+    text-transform: capitalize;
+  }
+}
+// @media (min-width: 490px) and (max-width: 768px) {
+//   .hero {
+//     .air {
+//       img {
+//         transform: translate(-8%, 0) rotate(-22deg);
+//         height: 30%;
+//       }
+//     }
+//     .sport {
+//       img {
+//         height: 60%;
+//       }
+//     }
+//     .jorden {
+//       img {
+//         transform: translate(-8%, 0) rotate(-22deg);
+//         height: 30%;
+//       }
+//     }
+//     .btn {
+//       height: 220px;
+//       padding: 0 20px;
+//       margin-bottom: 20px;
+//       .btns {
+//         .box {
+//           img {
+//             user-select: none;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

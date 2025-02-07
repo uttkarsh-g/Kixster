@@ -1,4 +1,59 @@
-.shop {
+#shop {
   width: 100%;
   height: 100vh;
+  @include cf;
+  padding: 0 50px;
+  #shop-cnt {
+    padding: 100px 0;
+    width: $f;
+    h2 {
+      @include head;
+    }
+    #navigation {
+      text-align: end;
+      margin: 20px 0;
+      button {
+        font-family: $para;
+      }
+    }
+    #container {
+      height: 500px;
+
+      .cards {
+        height: $f;
+        @include ch;
+        justify-content: space-evenly;
+        .card {
+          width: 250px;
+          height: 250px;
+          .card-img {
+            width: $f;
+            height: 200px;
+            overflow: hidden;
+            img {
+              @include ff;
+              object-fit: cover;
+              object-position: center;
+              transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+            }
+          }
+          .card-img:hover {
+            img {
+              scale: 1.1;
+            }
+          }
+          .card-cnt {
+            p {
+              font-family: $head;
+            }
+            .fbab {
+              padding: 0 10px;
+              display: flex;
+              justify-content: space-between;
+            }
+          }
+        }
+      }
+    }
+  }
 }

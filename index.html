@@ -4,10 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/style.css" />
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    /> -->
     <script type="module" src="/assets/app.js" defer></script>
     <script type="module" src="/assets/animation.js" defer></script>
     <title>Kixster</title>
@@ -20,7 +16,7 @@
           <h1>KIXSTER</h1>
           <div class="cartanmenu">
             <div class="cart">
-              <div class="itemm">0</div>
+              <div class="itemm"></div>
               <i class="ri-shopping-cart-line"></i>
             </div>
             <div class="menu">
@@ -30,9 +26,9 @@
           </div>
 
           <div class="hamburger grey">
-            <a href="#">Home</a>
+            <a href="">Home</a>
             <a href="#about">About</a>
-            <a href="#">Shop</a>
+            <a href="#shop">Shop</a>
             <a href="#">Contact</a>
           </div>
         </div>
@@ -93,20 +89,14 @@
           <div class="cnt">
             <h2>LEGIT. RARE. YOURS.</h2>
             <p>
-              In a market flooded with fakes and overpriced resellers, we keep
-              it 100% real. Every sneaker we sell is legit-checked,
-              authenticated, and inspected, so you get nothing but the real
-              deal—no doubts, no compromises.
-            </p>
-            <p>
-              We source rare, hard-to-find sneakers that actually matter, from
-              exclusive drops to grails you won’t find anywhere else. And
-              because we’re sneakerheads ourselves, we know the game—we built
-              this platform on trust, culture, and a love for kicks.
+              In a market full of fakes and overpriced resellers, we keep it
+              real. Every sneaker is legit-checked, authenticated, and
+              inspected—no doubts, no compromises. We source rare, hard-to-find
+              kicks and bring them straight to sneakerheads who know the game
             </p>
             <p class="star">
-              Cop with confidence—because when it comes to sneakers, only the
-              real ones belong in your collection.
+              Cop with confidence—because only the real ones belong in your
+              collection.
             </p>
           </div>
         </section>
@@ -126,7 +116,60 @@
           </div>
         </section>
       </section>
-      <section class="shop"></section>
+      <section id="shop">
+        <div id="shop-cnt">
+          <h2>SHOP</h2>
+          <div id="navigation">
+            <button onclick="shopPage()">Show All</button>
+          </div>
+          <div id="container">
+            <div class="cards">
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/shop/AIR+JORDAN+1+MID.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="card-cnt">
+                  <p>Air Jorden</p>
+                  <div class="fbab">
+                    <i class="ri-heart-fill heart"></i>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img src="./assets/images/shop/AIR+JORDAN+4+RM.webp" alt="" />
+                </div>
+                <div class="card-cnt">
+                  <p>Air Jorden</p>
+                  <div class="fbab">
+                    <i class="ri-heart-fill heart"></i>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-img">
+                  <img
+                    src="./assets/images/shop/AIR+JORDAN+1+MID+SE.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="card-cnt">
+                  <p>Air Jorden</p>
+                  <div class="fbab">
+                    <i class="ri-heart-fill heart"></i>
+                    <button>Add to cart</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="feedback"></section>
     </main>
     <footer></footer>
