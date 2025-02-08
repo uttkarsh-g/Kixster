@@ -7,6 +7,7 @@ const btn = document.querySelectorAll('.box');
 const img = document.querySelectorAll('.img');
 const mouse = document.querySelector('.mm');
 const heart = document.querySelectorAll('.heart');
+const shop = document.querySelector('.shop');
 
 // Mouse Follower
 
@@ -94,4 +95,8 @@ heart.forEach((icon) => {
     e.stopPropagation();
     icon.classList.toggle('love');
   });
+});
+
+shop.addEventListener('click', (e) => {
+  window.location.href = './shop.html';
 });
