@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -39,9 +39,9 @@ body {
   transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
   z-index: 999999;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   pointer-events: none;
   opacity: 0;
 }
@@ -59,11 +59,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .grey {
@@ -97,14 +97,14 @@ nav #navbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 nav #navbar h1 {
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   font-weight: 500;
   font-size: 40px;
   color: #000;
@@ -115,8 +115,8 @@ nav #navbar .cartanmenu {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 30px;
 }
 nav #navbar .cartanmenu .cart {
@@ -138,11 +138,11 @@ nav #navbar .cartanmenu .cart .itemm {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 50%;
 }
 nav #navbar .cartanmenu .menu {
@@ -153,15 +153,15 @@ nav #navbar .cartanmenu .menu {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 10px;
   position: relative;
   z-index: 50;
@@ -184,8 +184,8 @@ nav #navbar .hamburger {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   max-width: 350px;
@@ -193,22 +193,22 @@ nav #navbar .hamburger {
   z-index: 15;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 50px;
 }
 nav #navbar .hamburger a {
   text-decoration: none;
   color: #fff;
   font-size: 40px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
 }
 nav #navbar .active {
   position: absolute;
@@ -217,11 +217,11 @@ nav #navbar .active {
 
 .mact #t {
   -webkit-transform: translate(0, 11px) rotate(-45deg);
-          transform: translate(0, 11px) rotate(-45deg);
+  transform: translate(0, 11px) rotate(-45deg);
 }
 .mact #b {
   -webkit-transform: translate(0, -5px) rotate(45deg);
-          transform: translate(0, -5px) rotate(45deg);
+  transform: translate(0, -5px) rotate(45deg);
 }
 
 @media (max-width: 500px) {
@@ -259,16 +259,16 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .hero .title h1 {
   text-align: center;
   font-size: 22vw;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
 }
 .hero .imge {
   position: absolute;
@@ -281,11 +281,11 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .hero .imge .img {
   position: absolute;
@@ -295,33 +295,33 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
 }
 .hero .imge .img img {
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
 }
 .hero .air img {
   -webkit-transform: translate(-10%, 0) rotate(-22deg);
-          transform: translate(-10%, 0) rotate(-22deg);
+  transform: translate(-10%, 0) rotate(-22deg);
   height: 50%;
 }
 .hero .sport img {
   -webkit-transform: translate(0, 10%) rotate(10deg);
-          transform: translate(0, 10%) rotate(10deg);
+  transform: translate(0, 10%) rotate(10deg);
   height: 100%;
 }
 .hero .jorden img {
   -webkit-transform: translate(-10%, 0) rotate(-22deg);
-          transform: translate(-10%, 0) rotate(-22deg);
+  transform: translate(-10%, 0) rotate(-22deg);
   height: 55%;
 }
 .hero .btn {
@@ -331,11 +331,11 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -ms-flex-align: end;
+  align-items: end;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  -ms-flex-pack: end;
+  justify-content: end;
   padding: 0 50px;
   position: relative;
   z-index: 5;
@@ -353,32 +353,32 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   border-radius: 5px;
   cursor: pointer;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
 }
 .hero .a {
   width: 100%;
   height: 70%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .hero .s {
   -webkit-transform: translate(0, 15%) rotate(40deg);
-          transform: translate(0, 15%) rotate(40deg);
+  transform: translate(0, 15%) rotate(40deg);
   height: 120%;
 }
 .hero .j {
   width: 100%;
   height: 70%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 .hero .scrol {
   height: 50px;
@@ -386,19 +386,19 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 .hero .scrol p {
   font-size: 20px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   color: #000;
   font-weight: 500;
 }
@@ -420,7 +420,7 @@ nav #navbar .active {
 @media (max-width: 490px) {
   .hero .air img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 25%;
   }
   .hero .sport img {
@@ -428,7 +428,7 @@ nav #navbar .active {
   }
   .hero .jorden img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 25%;
   }
   .hero .btn {
@@ -438,9 +438,9 @@ nav #navbar .active {
   }
   .hero .btn .btns .box img {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
   .hero .scrol p {
     font-size: 16px;
@@ -449,7 +449,7 @@ nav #navbar .active {
 @media (min-width: 490px) and (max-width: 768px) {
   .hero .air img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 30%;
   }
   .hero .sport img {
@@ -457,7 +457,7 @@ nav #navbar .active {
   }
   .hero .jorden img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 30%;
   }
   .hero .btn {
@@ -467,15 +467,15 @@ nav #navbar .active {
   }
   .hero .btn .btns .box img {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   .hero .air img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 35%;
   }
   .hero .sport img {
@@ -483,7 +483,7 @@ nav #navbar .active {
   }
   .hero .jorden img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
-            transform: translate(-8%, 0) rotate(-22deg);
+    transform: translate(-8%, 0) rotate(-22deg);
     height: 35%;
   }
   .hero .btn {
@@ -493,9 +493,9 @@ nav #navbar .active {
   }
   .hero .btn .btns .box img {
     -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 }
 .about {
@@ -515,13 +515,13 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 .about .la .cnt {
   padding: 0 100px;
@@ -529,13 +529,13 @@ nav #navbar .active {
 .about .la .cnt h2 {
   color: #000;
   font-size: 5vw;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 .about .la .cnt p {
   font-size: 30px;
-  font-family: "Mukta", serif;
+  font-family: 'Mukta', serif;
 }
 .about .la .cnt p #bold {
   font-size: 40px;
@@ -548,13 +548,13 @@ nav #navbar .active {
 .about .aa .cnt h2 {
   color: #000;
   font-size: 5vw;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 .about .aa .cnt p {
   font-size: 30px;
-  font-family: "Mukta", serif;
+  font-family: 'Mukta', serif;
 }
 .about .fa .cnt {
   padding: 0 100px;
@@ -562,13 +562,13 @@ nav #navbar .active {
 .about .fa .cnt h2 {
   color: #000;
   font-size: 5vw;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   margin-bottom: 50px;
   text-transform: uppercase;
 }
 .about .fa .cnt p {
   font-size: 30px;
-  font-family: "Mukta", serif;
+  font-family: 'Mukta', serif;
 }
 
 .star {
@@ -586,8 +586,8 @@ nav #navbar .active {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
   }
@@ -604,13 +604,13 @@ nav #navbar .active {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
   }
   .about .la .cnt {
     padding: 30px 20px;
@@ -618,13 +618,13 @@ nav #navbar .active {
   .about .la .cnt h2 {
     color: #000;
     font-size: 8vw;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
   .about .la .cnt p {
     font-size: 16px;
-    font-family: "Mukta", serif;
+    font-family: 'Mukta', serif;
   }
   .about .la .cnt p #bold {
     font-size: 30px;
@@ -639,7 +639,7 @@ nav #navbar .active {
   .about .fa .cnt h2 {
     color: #000;
     font-size: 8vw;
-    font-family: "Inter", serif;
+    font-family: 'Inter', serif;
     margin-bottom: 20px;
     text-transform: uppercase;
   }
@@ -647,7 +647,7 @@ nav #navbar .active {
   .about .fa .cnt p {
     margin: 20px 0;
     font-size: 16px;
-    font-family: "Mukta", serif;
+    font-family: 'Mukta', serif;
   }
   .star {
     font-weight: 900;
@@ -663,15 +663,15 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 0 50px;
 }
 #shop #shop-cnt {
-  padding: 5% 0 20px 0;
+  padding: 100px 0 20px 0;
   width: 100%;
 }
 #shop #shop-cnt h2 {
@@ -679,18 +679,26 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #000;
   font-size: 5vw;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   margin-bottom: 50px;
   text-transform: uppercase;
   gap: 20px;
   font-size: 5vw;
 }
 #shop #shop-cnt h2 #emoji {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 60px;
   width: 60px;
 }
@@ -703,127 +711,251 @@ nav #navbar .active {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 20px 0;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 5px 0;
 }
 #shop #shop-cnt #navigation h4 {
   color: #000;
   font-size: 30px;
-  font-family: "Inter", serif;
-}
-#shop #shop-cnt #navigation button {
-  font-family: "Mukta", serif;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 2px 10px;
-  border-radius: 50px;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.24);
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.24);
+  font-family: 'Inter', serif;
 }
 #shop #shop-cnt #container {
-  height: 500px;
-}
-#shop #shop-cnt #container .cards {
-  height: 100%;
+  height: 480px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 30px;
 }
-#shop #shop-cnt #container .cards .card {
-  width: 25%;
+#shop #shop-cnt #container .swiper {
+  width: 80%;
+  height: 100%;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+#shop #shop-cnt #container .swiper .swiper-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+#shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card {
+  width: 350px;
   height: 90%;
   border-radius: 15px;
-  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 52px 0 rgba(0, 0, 0, 0.212);
-          box-shadow: 0 0 52px 0 rgba(0, 0, 0, 0.212);
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
 }
-#shop #shop-cnt #container .cards .card .card-img {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-img {
   width: 100%;
   height: 80%;
   overflow: hidden;
 }
-#shop #shop-cnt #container .cards .card .card-img img {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-img
+  img {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
 }
-#shop #shop-cnt #container .cards .card .card-img:hover img {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-img:hover
+  img {
   scale: 1.1;
 }
-#shop #shop-cnt #container .cards .card .card-cnt {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt {
   height: 20%;
   padding: 0 10px;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pal {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pal {
   padding: 2% 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pal p {
-  font-family: "Inter", serif;
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pal
+  p {
+  font-family: 'Inter', serif;
   font-weight: 700;
   font-size: 23px;
   color: #000;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pal i {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pal
+  i {
   font-size: 25px;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pab {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab {
   height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pab .price {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab
+  .price {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 10px;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pab .price .o,
-#shop #shop-cnt #container .cards .card .card-cnt .pab .price .n {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab
+  .price
+  .o,
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab
+  .price
+  .n {
   font-size: 18px;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pab .price .o {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab
+  .price
+  .o {
   -webkit-text-decoration: 2px red line-through;
-          text-decoration: 2px red line-through;
+  text-decoration: 2px red line-through;
 }
-#shop #shop-cnt #container .cards .card .card-cnt .pab button {
+#shop
+  #shop-cnt
+  #container
+  .swiper
+  .swiper-wrapper
+  .swiper-slide
+  .card
+  .card-cnt
+  .pab
+  button {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -832,80 +964,331 @@ nav #navbar .active {
   height: -moz-fit-content;
   height: fit-content;
   font-size: 16px;
-  font-family: "Inter", serif;
+  font-family: 'Inter', serif;
   border-radius: 20px;
   padding: 5px 10px;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
-.hover:hover {
-  text-decoration: underline;
-}
-
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #shop {
     padding: 0 20px;
   }
   #shop #shop-cnt {
-    padding: 90px 0 10px 0;
+    padding: 100px 0 20px 0;
+    width: 100%;
   }
   #shop #shop-cnt h2 {
-    font-size: 6.2vw;
-    margin-bottom: 10px;
-  }
-  #shop #shop-cnt h2 #emoji {
-    height: 7%;
-    width: 7%;
-  }
-  #shop #shop-cnt #navigation h4 {
-    font-size: 4.5vw;
-  }
-  #shop #shop-cnt #navigation button {
-    font-size: 16px;
-    padding: 2px 10px;
-  }
-  #shop #shop-cnt #container {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-  }
-  #shop #shop-cnt #container .cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  #shop #shop-cnt #container .cards .card {
-    margin: 10px 0;
-    width: 250px;
-    height: 350px;
-  }
-  #shop #shop-cnt #container .cards .card .card-img {
-    height: 75%;
-  }
-  #shop #shop-cnt #container .cards .card .card-cnt .pal p {
-    font-size: 16px;
-  }
-  #shop #shop-cnt #container .cards .card .card-cnt .pal i {
-    font-size: 20px;
-  }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5px;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #000;
+    font-size: 5vw;
+    font-family: 'Inter', serif;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    gap: 20px;
+    font-size: 5vw;
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price .o,
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price .n {
+  #shop #shop-cnt h2 #emoji {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 60px;
+    width: 60px;
+  }
+  #shop #shop-cnt h2 #emoji img {
+    height: 100%;
+    width: 100%;
+  }
+  #shop #shop-cnt #navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  #shop #shop-cnt #navigation h4 {
+    color: #000;
+    font-size: 30px;
+    font-family: 'Inter', serif;
+  }
+  #shop #shop-cnt #container {
+    height: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  #shop #shop-cnt #container .swiper {
+    width: 100%;
+    height: 100%;
+    cursor: -webkit-grab;
+    cursor: grab;
+  }
+  #shop #shop-cnt #container .swiper .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card {
+    width: 300px;
+    height: 90%;
+    border-radius: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-img {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-img
+    img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-img:hover
+    img {
+    scale: 1.1;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt {
+    height: 20%;
+    padding: 0 10px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pal {
+    padding: 2% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pal
+    p {
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pal
+    i {
+    font-size: 25px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o,
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .n {
+    font-size: 18px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o {
+    -webkit-text-decoration: 2px red line-through;
+    text-decoration: 2px red line-through;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-wrapper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     font-size: 16px;
-  }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab button {
-    font-size: 13px;
+    font-family: 'Inter', serif;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+  .swiper-slide {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1025px) {
+  .swiper-slide {
+    width: 33.33% !important;
+  }
+}
+@media (min-width: 769px) and (max-width: 1015px) {
   #shop {
     padding: 0 20px;
   }
@@ -920,75 +1303,304 @@ nav #navbar .active {
   #shop #shop-cnt #navigation h4 {
     font-size: 30px;
   }
-  #shop #shop-cnt #navigation button {
-    font-size: 16px;
-    padding: 2px 10px;
+  #shop #shop-cnt #container .swiper {
+    width: 100%;
   }
-  #shop #shop-cnt #container {
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+  #shop #shop-cnt #container .swiper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
-  #shop #shop-cnt #container .cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  #shop #shop-cnt #container .swiper .swiper-slide .card {
+    width: 350px;
+    height: 90%;
+    border-radius: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
   }
-  #shop #shop-cnt #container .cards .card {
-    margin: 10px 0;
-    width: 250px;
-    height: 350px;
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
   }
-  #shop #shop-cnt #container .cards .card .card-img {
-    height: 75%;
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pal p {
-    font-size: 16px;
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img:hover img {
+    scale: 1.1;
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pal i {
-    font-size: 20px;
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt {
+    height: 20%;
+    padding: 0 10px;
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price {
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal {
+    padding: 2% 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 5px;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price .o,
-  #shop #shop-cnt #container .cards .card .card-cnt .pab .price .n {
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal p {
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal i {
+    font-size: 25px;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o,
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .n {
+    font-size: 18px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o {
+    -webkit-text-decoration: 2px red line-through;
+    text-decoration: 2px red line-through;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
     font-size: 16px;
+    font-family: 'Inter', serif;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
   }
-  #shop #shop-cnt #container .cards .card .card-cnt .pab button {
-    font-size: 13px;
+}
+@media (min-width: 1015px) and (max-width: 1300px) {
+  #shop {
+    padding: 0 20px;
   }
-}
-.feedback {
-  height: 100vh;
-  width: 100%;
-}
-.feedback .swiper {
-  width: 100%;
-  height: 100%;
-}
-.feedback .swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.feedback .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  #shop #shop-cnt h2 {
+    font-size: 8vw;
+    margin-bottom: 10px;
+  }
+  #shop #shop-cnt h2 #emoji {
+    height: 7%;
+    width: 7%;
+  }
+  #shop #shop-cnt #navigation h4 {
+    font-size: 30px;
+  }
+  #shop #shop-cnt #container .swiper {
+    width: 100%;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card {
+    width: 350px;
+    height: 90%;
+    border-radius: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img img {
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img:hover img {
+    scale: 1.1;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt {
+    height: 20%;
+    padding: 0 10px;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal {
+    padding: 2% 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal p {
+    font-family: 'Inter', serif;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal i {
+    font-size: 25px;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab {
+    height: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o,
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .n {
+    font-size: 18px;
+  }
+  #shop
+    #shop-cnt
+    #container
+    .swiper
+    .swiper-slide
+    .card
+    .card-cnt
+    .pab
+    .price
+    .o {
+    -webkit-text-decoration: 2px red line-through;
+    text-decoration: 2px red line-through;
+  }
+  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: inherit;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    font-size: 16px;
+    font-family: 'Inter', serif;
+    border-radius: 20px;
+    padding: 5px 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
 }

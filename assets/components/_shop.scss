@@ -4,7 +4,7 @@
   @include cf;
   padding: 0 50px;
   #shop-cnt {
-    padding: 5% 0 20px 0;
+    padding: 100px 0 20px 0;
     width: $f;
     h2 {
       @include ch;
@@ -12,7 +12,7 @@
       gap: 20px;
       font-size: 5vw;
       #emoji {
-        display: block;
+        @include cf;
         height: 60px;
         width: 60px;
         img {
@@ -23,97 +23,102 @@
     #navigation {
       @include ch;
       justify-content: space-between;
-      margin: 20px 0;
+      margin: 5px 0;
       h4 {
         color: $black;
         font-size: 30px;
         font-family: $head;
       }
-      button {
-        font-family: $para;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        font-size: 18px;
-        padding: 2px 10px;
-        border-radius: 50px;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.24);
-      }
     }
     #container {
-      height: 500px;
+      height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      .swiper {
+        width: 80%;
+        height: 100%;
+        cursor: grab;
 
-      .cards {
-        height: $f;
-        @include ch;
-        justify-content: space-evenly;
-        .card {
-          width: 25%;
-          height: 90%;
-          border-radius: 15px;
-          cursor: pointer;
-          overflow: hidden;
-          box-shadow: 0 0 52px 0 rgba(0, 0, 0, 0.212);
-          .card-img {
-            width: $f;
-            height: 80%;
-            overflow: hidden;
-            img {
-              @include ff;
-              object-fit: cover;
-              transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-            }
-          }
-          .card-img:hover {
-            img {
-              scale: 1.1;
-            }
-          }
-          .card-cnt {
-            height: 20%;
-            padding: 0 10px;
-            .pal {
-              padding: 2% 0;
-              @include ch;
-              justify-content: space-between;
-              p {
-                font-family: $head;
-                font-weight: 700;
-                font-size: 23px;
-                color: $black;
-              }
-              i {
-                font-size: 25px;
-              }
-            }
-            .pab {
-              height: 50%;
-              @include ch;
-              justify-content: space-between;
-              .price {
-                @include ch;
-                justify-content: space-between;
-                gap: 10px;
-                .o,
-                .n {
-                  font-size: 18px;
-                }
-                .o {
-                  text-decoration: 2px red line-through;
+        .swiper-wrapper {
+          display: flex;
+
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+              width: 350px;
+              height: 90%;
+              border-radius: 15px;
+              user-select: none;
+              overflow: hidden;
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+              .card-img {
+                width: $f;
+                height: 80%;
+                overflow: hidden;
+                img {
+                  @include ff;
+                  object-fit: cover;
+                  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
                 }
               }
-              button {
-                border: none;
-                background-color: transparent;
-                cursor: pointer;
-                color: inherit;
-                height: fit-content;
-                font-size: 16px;
-                font-family: $head;
-                border-radius: 20px;
-                padding: 5px 10px;
-                background-color: black;
-                color: white;
+              .card-img:hover {
+                img {
+                  scale: 1.1;
+                }
+              }
+              .card-cnt {
+                height: 20%;
+                padding: 0 10px;
+                .pal {
+                  padding: 2% 0;
+                  @include ch;
+                  justify-content: space-between;
+                  p {
+                    font-family: $head;
+                    font-weight: 700;
+                    font-size: 23px;
+                    color: $black;
+                  }
+                  i {
+                    font-size: 25px;
+                  }
+                }
+                .pab {
+                  height: 50%;
+                  @include ch;
+                  justify-content: space-between;
+                  .price {
+                    @include ch;
+                    justify-content: space-between;
+                    gap: 10px;
+                    .o,
+                    .n {
+                      font-size: 18px;
+                    }
+                    .o {
+                      text-decoration: 2px red line-through;
+                    }
+                  }
+                  button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: inherit;
+                    height: fit-content;
+                    font-size: 16px;
+                    font-family: $head;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                  }
+                }
               }
             }
           }
@@ -122,63 +127,130 @@
     }
   }
 }
-.hover:hover {
-  text-decoration: underline;
-}
 
-@media (max-width: 769px) {
+// .hover:hover {
+//   text-decoration: underline;
+// }
+
+@media (max-width: 768px) {
   #shop {
     padding: 0 20px;
     #shop-cnt {
-      padding: 90px 0 10px 0;
+      padding: 100px 0 20px 0;
+      width: $f;
       h2 {
-        font-size: 6.2vw;
-        margin-bottom: 10px;
+        @include ch;
+        @include head;
+        gap: 20px;
+        font-size: 5vw;
         #emoji {
-          height: 7%;
-          width: 7%;
+          @include cf;
+          height: 60px;
+          width: 60px;
+          img {
+            @include ff;
+          }
         }
       }
       #navigation {
+        @include ch;
+        justify-content: space-between;
+        margin: 5px 0;
         h4 {
-          font-size: 4.5vw;
-        }
-        button {
-          font-size: 16px;
-          padding: 2px 10px;
+          color: $black;
+          font-size: 30px;
+          font-family: $head;
         }
       }
       #container {
-        height: fit-content;
-        .cards {
-          flex-wrap: wrap;
-          .card {
-            margin: 10px 0;
-            width: 250px;
-            height: 350px;
-            .card-img {
-              height: 75%;
-            }
-            .card-cnt {
-              .pal {
-                p {
-                  font-size: 16px;
-                }
-                i {
-                  font-size: 20px;
-                }
-              }
-              .pab {
-                .price {
-                  @include ch;
-                  gap: 5px;
-                  .o,
-                  .n {
-                    font-size: 16px;
+        height: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        .swiper {
+          width: $f;
+          height: 100%;
+          cursor: grab;
+
+          .swiper-wrapper {
+            display: flex;
+
+            .swiper-slide {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+
+              .card {
+                width: 300px;
+                height: 90%;
+                border-radius: 15px;
+                user-select: none;
+                overflow: hidden;
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+                .card-img {
+                  width: $f;
+                  height: 80%;
+                  overflow: hidden;
+                  img {
+                    @include ff;
+                    object-fit: cover;
+                    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
                   }
                 }
-                button {
-                  font-size: 13px;
+                .card-img:hover {
+                  img {
+                    scale: 1.1;
+                  }
+                }
+                .card-cnt {
+                  height: 20%;
+                  padding: 0 10px;
+                  .pal {
+                    padding: 2% 0;
+                    @include ch;
+                    justify-content: space-between;
+                    p {
+                      font-family: $head;
+                      font-weight: 700;
+                      font-size: 23px;
+                      color: $black;
+                    }
+                    i {
+                      font-size: 25px;
+                    }
+                  }
+                  .pab {
+                    height: 50%;
+                    @include ch;
+                    justify-content: space-between;
+                    .price {
+                      @include ch;
+                      justify-content: space-between;
+                      gap: 10px;
+                      .o,
+                      .n {
+                        font-size: 18px;
+                      }
+                      .o {
+                        text-decoration: 2px red line-through;
+                      }
+                    }
+                    button {
+                      border: none;
+                      background-color: transparent;
+                      cursor: pointer;
+                      color: inherit;
+                      height: fit-content;
+                      font-size: 16px;
+                      font-family: $head;
+                      border-radius: 20px;
+                      padding: 5px 10px;
+                      background-color: black;
+                      color: white;
+                      cursor: pointer;
+                    }
+                  }
                 }
               }
             }
@@ -188,7 +260,46 @@
     }
   }
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .swiper-slide {
+    width: 50% !important;
+  }
+}
+
+@media (min-width: 1025px) {
+  .swiper-slide {
+    width: 33.33% !important;
+  }
+}
+
+// @media (max-width: 769px) {
+//   #shop {
+//     padding: 0 20px;
+//     #shop-cnt {
+//       padding: 90px 0 10px 0;
+//       h2 {
+//         font-size: 6.2vw;
+//         margin-bottom: 10px;
+//         #emoji {
+//           height: 7%;
+//           width: 7%;
+//         }
+//       }
+//       #navigation {
+//         h4 {
+//           font-size: 4.5vw;
+//         }
+//       }
+//       #container {
+//         .swiper {
+//           width: $f;
+//         }
+//       }
+//     }
+//   }
+// }
+@media (min-width: 769px) and (max-width: 1015px) {
   #shop {
     padding: 0 20px;
     #shop-cnt {
@@ -204,42 +315,187 @@
         h4 {
           font-size: 30px;
         }
-        button {
-          font-size: 16px;
-          padding: 2px 10px;
+      }
+      #container {
+        .swiper {
+          width: $f;
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+              width: 350px;
+              height: 90%;
+              border-radius: 15px;
+              user-select: none;
+              overflow: hidden;
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+              .card-img {
+                width: $f;
+                height: 80%;
+                overflow: hidden;
+                img {
+                  @include ff;
+                  object-fit: cover;
+                  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
+                }
+              }
+              .card-img:hover {
+                img {
+                  scale: 1.1;
+                }
+              }
+              .card-cnt {
+                height: 20%;
+                padding: 0 10px;
+                .pal {
+                  padding: 2% 0;
+                  @include ch;
+                  justify-content: space-between;
+                  p {
+                    font-family: $head;
+                    font-weight: 700;
+                    font-size: 23px;
+                    color: $black;
+                  }
+                  i {
+                    font-size: 25px;
+                  }
+                }
+                .pab {
+                  height: 50%;
+                  @include ch;
+                  justify-content: space-between;
+                  .price {
+                    @include ch;
+                    justify-content: space-between;
+                    gap: 10px;
+                    .o,
+                    .n {
+                      font-size: 18px;
+                    }
+                    .o {
+                      text-decoration: 2px red line-through;
+                    }
+                  }
+                  button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: inherit;
+                    height: fit-content;
+                    font-size: 16px;
+                    font-family: $head;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1015px) and (max-width: 1300px) {
+  #shop {
+    padding: 0 20px;
+    #shop-cnt {
+      h2 {
+        font-size: 8vw;
+        margin-bottom: 10px;
+        #emoji {
+          height: 7%;
+          width: 7%;
+        }
+      }
+      #navigation {
+        h4 {
+          font-size: 30px;
         }
       }
       #container {
-        height: fit-content;
-        .cards {
-          flex-wrap: wrap;
-          .card {
-            margin: 10px 0;
-            width: 250px;
-            height: 350px;
-            .card-img {
-              height: 75%;
-            }
-            .card-cnt {
-              .pal {
-                p {
-                  font-size: 16px;
-                }
-                i {
-                  font-size: 20px;
+        .swiper {
+          width: $f;
+          .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card {
+              width: 350px;
+              height: 90%;
+              border-radius: 15px;
+              user-select: none;
+              overflow: hidden;
+              box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
+              .card-img {
+                width: $f;
+                height: 80%;
+                overflow: hidden;
+                img {
+                  @include ff;
+                  object-fit: cover;
+                  transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
                 }
               }
-              .pab {
-                .price {
+              .card-img:hover {
+                img {
+                  scale: 1.1;
+                }
+              }
+              .card-cnt {
+                height: 20%;
+                padding: 0 10px;
+                .pal {
+                  padding: 2% 0;
                   @include ch;
-                  gap: 5px;
-                  .o,
-                  .n {
-                    font-size: 16px;
+                  justify-content: space-between;
+                  p {
+                    font-family: $head;
+                    font-weight: 700;
+                    font-size: 23px;
+                    color: $black;
+                  }
+                  i {
+                    font-size: 25px;
                   }
                 }
-                button {
-                  font-size: 13px;
+                .pab {
+                  height: 50%;
+                  @include ch;
+                  justify-content: space-between;
+                  .price {
+                    @include ch;
+                    justify-content: space-between;
+                    gap: 10px;
+                    .o,
+                    .n {
+                      font-size: 18px;
+                    }
+                    .o {
+                      text-decoration: 2px red line-through;
+                    }
+                  }
+                  button {
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    color: inherit;
+                    height: fit-content;
+                    font-size: 16px;
+                    font-family: $head;
+                    border-radius: 20px;
+                    padding: 5px 10px;
+                    background-color: black;
+                    color: white;
+                    cursor: pointer;
+                  }
                 }
               }
             }
