@@ -145,6 +145,10 @@ nav #navbar .cartanmenu .cart .itemm {
   justify-content: center;
   border-radius: 50%;
 }
+nav #navbar .cartanmenu .cart a {
+  text-decoration: none;
+  color: #000;
+}
 nav #navbar .cartanmenu .menu {
   cursor: pointer;
   width: 50px;
@@ -739,8 +743,6 @@ nav #navbar .active {
 #shop #shop-cnt #container .swiper {
   width: 80%;
   height: 100%;
-  cursor: -webkit-grab;
-  cursor: grab;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper {
   display: -webkit-box;
@@ -969,7 +971,6 @@ nav #navbar .active {
   padding: 5px 10px;
   background-color: black;
   color: white;
-  cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -1045,8 +1046,6 @@ nav #navbar .active {
   #shop #shop-cnt #container .swiper {
     width: 100%;
     height: 100%;
-    cursor: -webkit-grab;
-    cursor: grab;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper {
     display: -webkit-box;
@@ -1172,6 +1171,7 @@ nav #navbar .active {
     .pal
     i {
     font-size: 25px;
+    cursor: pointer;
   }
   #shop
     #shop-cnt
@@ -1275,7 +1275,6 @@ nav #navbar .active {
     padding: 5px 10px;
     background-color: black;
     color: white;
-    cursor: pointer;
   }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -1443,7 +1442,6 @@ nav #navbar .active {
     padding: 5px 10px;
     background-color: black;
     color: white;
-    cursor: pointer;
   }
 }
 @media (min-width: 1015px) and (max-width: 1300px) {
@@ -1527,6 +1525,7 @@ nav #navbar .active {
   }
   #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal i {
     font-size: 25px;
+    cursor: pointer;
   }
   #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab {
     height: 50%;
@@ -1601,6 +1600,5 @@ nav #navbar .active {
     padding: 5px 10px;
     background-color: black;
     color: white;
-    cursor: pointer;
   }
 }

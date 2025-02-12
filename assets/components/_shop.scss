@@ -39,7 +39,6 @@
       .swiper {
         width: 80%;
         height: 100%;
-        cursor: grab;
 
         .swiper-wrapper {
           display: flex;
@@ -116,7 +115,6 @@
                     padding: 5px 10px;
                     background-color: black;
                     color: white;
-                    cursor: pointer;
                   }
                 }
               }
@@ -171,7 +169,6 @@
         .swiper {
           width: $f;
           height: 100%;
-          cursor: grab;
 
           .swiper-wrapper {
             display: flex;
@@ -218,6 +215,7 @@
                     }
                     i {
                       font-size: 25px;
+                      cursor: pointer;
                     }
                   }
                   .pab {
@@ -248,7 +246,6 @@
                       padding: 5px 10px;
                       background-color: black;
                       color: white;
-                      cursor: pointer;
                     }
                   }
                 }
@@ -391,7 +388,6 @@
                     padding: 5px 10px;
                     background-color: black;
                     color: white;
-                    cursor: pointer;
                   }
                 }
               }
@@ -494,7 +490,6 @@
                     padding: 5px 10px;
                     background-color: black;
                     color: white;
-                    cursor: pointer;
                   }
                 }
               }

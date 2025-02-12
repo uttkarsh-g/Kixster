@@ -38,6 +38,10 @@ nav {
           @include cf;
           border-radius: 50%;
         }
+        a {
+          text-decoration: none;
+          color: $black;
+        }
       }
       .menu {
         cursor: pointer;
