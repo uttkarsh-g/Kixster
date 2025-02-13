@@ -1,0 +1,129 @@
+#contact {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  #heading {
+    padding: 100px 20px;
+    h2 {
+      font-size: clamp(4.2rem, 10vw, 8rem);
+      font-weight: 500;
+      font-family: $head;
+    }
+  }
+
+  #center {
+    display: flex;
+    padding: 20px;
+    #left {
+      width: 50%;
+      padding-right: 50px;
+      position: relative;
+      h3,
+      h4 {
+        font-family: $head;
+        font-weight: 400;
+        font-size: clamp(1rem, 3vw, 2.5rem);
+      }
+      h3 {
+        margin-bottom: 50px;
+      }
+    }
+    #right {
+      width: 50%;
+      form {
+        width: $f;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .name,
+        .email,
+        .message,
+        .end {
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          label {
+            font-weight: 400;
+            font-family: $head;
+            font-size: clamp(16px, 3vw, 2rem);
+
+            sup {
+              font-weight: 900;
+              font-family: $head;
+              font-size: clamp(16px, 3vw, 20px);
+            }
+          }
+          input,
+          textarea {
+            outline: none;
+            padding: 5px;
+            font-family: $para;
+            border: none;
+            border: 1px solid $grey;
+            border-radius: 5px;
+            resize: none;
+            font-size: clamp(16px, 3vw, 1.2rem);
+            background-color: #f5f5f5;
+          }
+          input {
+            height: 50px;
+          }
+          textarea {
+            height: 100px;
+          }
+          .sendMessage {
+            height: 50px;
+            width: 100px;
+            background-color: $black;
+            color: $white;
+            border: none;
+            border-radius: 10px;
+            font-size: clamp(16px, 2vw, 1.2rem);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  #contact {
+    #heading {
+      padding: 100px 20px 50px;
+      h2 {
+        text-align: center;
+        font-size: 15vw;
+      }
+    }
+
+    #center {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      #left {
+        width: $f;
+        padding-right: 0;
+        h3 {
+          margin-bottom: 20px;
+        }
+      }
+      #right {
+        width: $f;
+        form {
+          width: $f;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .name,
+          .email,
+          .message,
+          .end {
+            .sendMessage {
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,6 +9,8 @@
     <title>Kixster - Contact</title>
   </head>
   <body>
+    <div class="overlay"></div>
+
     <nav>
       <div id="navbar">
         <h1>KIXSTER</h1>
@@ -23,7 +25,7 @@
           </div>
         </div>
 
-        <div class="hamburger grey">
+        <div class="hamburger kixster-black">
           <a href="">Home</a>
           <a href="#about">About</a>
           <a href="#shop">Shop</a>
@@ -31,6 +33,40 @@
         </div>
       </div>
     </nav>
+    <section id="contact">
+      <section id="heading">
+        <h2>Get in touch</h2>
+      </section>
+      <section id="center">
+        <section id="left">
+          <h3>
+            Got questions or need the inside scoop? Hit us up — we’ve got you
+            covered!
+          </h3>
+          <h4>Contact details:</h4>
+          <div id="con"></div>
+        </section>
+        <section id="right">
+          <form action="" method="get">
+            <div class="name">
+              <label for="username">Full Name<sup>*</sup></label>
+              <input type="text" name="" id="username" required />
+            </div>
+            <div class="email">
+              <label for="email">Email<sup>*</sup></label>
+              <input type="email" name="" id="email" required />
+            </div>
+            <div class="message">
+              <label for="message">Your Message<sup>*</sup></label>
+              <textarea name="" id="message" required></textarea>
+            </div>
+            <div class="end">
+              <button type="submit" class="sendMessage">Send</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </section>
 
     <div class="mm"></div>
   </body>
