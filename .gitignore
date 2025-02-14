@@ -8,6 +8,7 @@ pnpm-debug.log*
 # Parcel cache and build files
 dist/
 .parcel-cache/
+.qodo
 
 # VS Code settings
 .vscode/

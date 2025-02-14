@@ -2,11 +2,6 @@ import aj1ms from './images/shop/AIR+JORDAN+1+MID+SE.webp';
 import ocb from './images/shop/ocb.png';
 import ye from './images/shop/ye.png';
 import aj1m from './images/shop/AIR+JORDAN+1+MID.webp';
-import y from './images/shop/y.png';
-import ocw from './images/shop/ocw.png';
-import aj4 from './images/shop/AIR+JORDAN+4+RM.webp';
-import af1 from './images/shop/AIR+FORCE+1+.webp';
-import jsl from './images/shop/JORDAN+SPIZIKE+LOW.webp';
 
 const btn = document.querySelectorAll('.box');
 const img = document.querySelectorAll('.img');
@@ -41,36 +36,6 @@ const products = {
     n: 'Air Jorden 1 Mid',
     op: 13000,
     np: 11000,
-  },
-  5: {
-    img: y,
-    n: 'ADIDAS YEEZY FOAM',
-    op: 10000,
-    np: 8999,
-  },
-  6: {
-    img: ocw,
-    n: 'ON RUNNING CLOUDTILT',
-    op: 23500,
-    np: 21999,
-  },
-  7: {
-    img: aj4,
-    n: 'Air Jorden 4 RM',
-    op: 14000,
-    np: 12999,
-  },
-  8: {
-    img: af1,
-    n: 'Air Force 1',
-    op: 15000,
-    np: 11000,
-  },
-  9: {
-    img: jsl,
-    n: 'Jorden Sipzike Low ',
-    op: 18500,
-    np: 14000,
   },
 };
 

@@ -1329,6 +1329,161 @@ nav #navbar .active {
     color: white;
   }
 }
+#shoppingpage {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+#shoppingpage #shopingheading {
+  padding: 100px 20px 20px;
+}
+#shoppingpage #shopingheading h2 {
+  font-size: clamp(3rem, 5vw, 8rem);
+  font-weight: 500;
+  font-family: "Inter", serif;
+}
+#shoppingpage #sorting {
+  padding: 0 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  font-family: "Inter", serif;
+}
+#shoppingpage #sorting #sort {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#shoppingpage .itemcontainer {
+  padding: 20px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 15px;
+  place-items: center;
+}
+#shoppingpage .itemcontainer .items {
+  aspect-ratio: 1;
+  max-width: 550px;
+  max-height: 500px;
+  margin-bottom: 50px;
+}
+#shoppingpage .itemcontainer .items .item {
+  border-radius: 5px;
+  overflow: hidden;
+  height: 100%;
+}
+#shoppingpage .itemcontainer .items .item .item-head {
+  width: 100%;
+  height: 80%;
+}
+#shoppingpage .itemcontainer .items .item .item-head img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt {
+  height: 20%;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .pname {
+  padding: 2% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .pname p {
+  font-family: "Inter", serif;
+  font-weight: 700;
+  font-size: 23px;
+  color: #000;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .pname i {
+  font-size: 25px;
+  cursor: pointer;
+  color: #dadada;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .pname .l {
+  color: red;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab {
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab .p-price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab .p-price .old,
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab .p-price .new {
+  font-size: 18px;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab .p-price .old {
+  -webkit-text-decoration: 2px rgb(255, 5, 5) line-through;
+          text-decoration: 2px rgb(255, 5, 5) line-through;
+}
+#shoppingpage .itemcontainer .items .item .item-cnt .ppab button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: inherit;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 16px;
+  font-family: "Inter", serif;
+  border-radius: 20px;
+  padding: 5px 10px;
+  background-color: black;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  #shoppingpage .itemcontainer {
+    grid-template-columns: repeat(2, minmax(250px, 1fr)); /* 2 Columns */
+  }
+}
+@media (max-width: 768px) {
+  #shoppingpage .itemcontainer {
+    grid-template-columns: repeat(1, minmax(250px, 1fr)); /* 1 Column */
+  }
+}
 #contact {
   width: 100%;
   min-height: 100vh;
