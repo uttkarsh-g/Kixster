@@ -3,6 +3,7 @@
   height: $vf;
   overflow: hidden;
   position: relative;
+  transition: 0.5s all ease-in;
   .title {
     height: calc(100vh - 300px);
     @include cf;

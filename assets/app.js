@@ -5,8 +5,7 @@ import aj1m from './images/shop/AIR+JORDAN+1+MID.webp';
 
 const btn = document.querySelectorAll('.box');
 const img = document.querySelectorAll('.img');
-const h = document.querySelector('.hamburger');
-const b = document.body;
+const hero = document.querySelector('.hero');
 const mouse = document.querySelector('.mm');
 const container = document.querySelector('#container');
 
@@ -49,10 +48,9 @@ btn.forEach((ele, index) => {
   ele.addEventListener('click', (element) => {
     const currentId = element.currentTarget.id;
     element.stopPropagation();
-    b.className = '';
-    h.className = 'hamburger';
-    b.classList.add(currentId);
-    h.classList.add(currentId);
+    hero.className = '';
+    hero.className = 'hero';
+    hero.classList.add(currentId);
 
     img.forEach((image, i) => {
       if (i === index) {
