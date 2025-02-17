@@ -42,3 +42,21 @@ body {
 .love {
   color: rgb(245, 14, 14);
 }
+
+header,
+footer {
+  position: sticky;
+}
+header {
+  top: 0;
+}
+main {
+  position: relative;
+  z-index: 2;
+  background-color: #f5f5f5;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+footer {
+  bottom: 0;
+}
