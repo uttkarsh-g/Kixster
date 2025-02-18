@@ -1,0 +1,36 @@
+.cartsection {
+  width: $f;
+  height: $vf;
+  background-color: #f5f5f5;
+  position: relative;
+  .emptycart {
+    flex-direction: column;
+    @include cf;
+    gap: 10px;
+    h3 {
+      font-family: $para;
+      font-weight: 600;
+      font-size: clamp(1.5rem, 4vw, 3rem);
+      line-height: 0.8;
+      text-align: center;
+    }
+  }
+  .cartgridsecction {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+
+    .contactsection {
+      background-color: rgb(133, 41, 41);
+    }
+    .itemssection {
+      background-color: rgb(54, 53, 53);
+    }
+    .price {
+      background-color: bisque;
+    }
+  }
+}
+.centercart {
+  @include cf;
+}

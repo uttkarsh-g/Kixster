@@ -1527,13 +1527,15 @@ nav #navbar .active {
 #shoppingpage #shopingheading {
   width: 100%;
   position: sticky;
-  top: -30px;
+  top: -10px;
   background-color: #f5f5f5;
   padding: 100px 20px 20px;
+  z-index: 2;
 }
 #shoppingpage #shopingheading h2 {
-  font-size: clamp(3rem, 5vw, 8rem);
+  font-size: clamp(4rem, 5vw, 8rem);
   font-weight: 500;
+  line-height: 0.8;
   font-family: "Inter", serif;
 }
 #shoppingpage #sorting {
@@ -1548,6 +1550,7 @@ nav #navbar .active {
       -ms-flex-pack: end;
           justify-content: end;
   font-family: "Inter", serif;
+  position: relative;
 }
 #shoppingpage #sorting #sort {
   display: -webkit-box;
@@ -1562,6 +1565,36 @@ nav #navbar .active {
   gap: 5px;
   font-size: 20px;
   cursor: pointer;
+}
+#shoppingpage #sorting #sort .sortoptions {
+  border: 1px solid black;
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  width: 180px;
+}
+#shoppingpage #sorting #sort .sortoptions #lth,
+#shoppingpage #sorting #sort .sortoptions #htl {
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+#shoppingpage #sorting #sort .sortoptions #lth p:hover,
+#shoppingpage #sorting #sort .sortoptions #htl p:hover {
+  text-decoration: underline;
+}
+#shoppingpage #sorting #sort .showoptions {
+  display: block;
 }
 #shoppingpage .itemcontainer {
   padding: 20px 50px;
@@ -1583,7 +1616,7 @@ nav #navbar .active {
 }
 #shoppingpage .itemcontainer .items .item .item-head {
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 #shoppingpage .itemcontainer .items .item .item-head img {
   height: 100%;
@@ -1592,7 +1625,7 @@ nav #navbar .active {
      object-fit: cover;
 }
 #shoppingpage .itemcontainer .items .item .item-cnt {
-  height: 20%;
+  height: 30%;
 }
 #shoppingpage .itemcontainer .items .item .item-cnt .pname {
   padding: 2% 0;
@@ -1609,7 +1642,7 @@ nav #navbar .active {
 #shoppingpage .itemcontainer .items .item .item-cnt .pname p {
   font-family: "Inter", serif;
   font-weight: 700;
-  font-size: 23px;
+  font-size: clamp(16px, 3vw, 23px);
   color: #000;
 }
 #shoppingpage .itemcontainer .items .item .item-cnt .pname i {
@@ -1676,8 +1709,65 @@ nav #navbar .active {
 @media (max-width: 768px) {
   #shoppingpage .itemcontainer {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
+    padding: 20px;
   }
 }
+.cartsection {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5f5f5;
+  position: relative;
+}
+.cartsection .emptycart {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+.cartsection .emptycart h3 {
+  font-family: "Mukta", serif;
+  font-weight: 600;
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  line-height: 0.8;
+  text-align: center;
+}
+.cartsection .cartgridsecction {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+.cartsection .cartgridsecction .contactsection {
+  background-color: rgb(133, 41, 41);
+}
+.cartsection .cartgridsecction .itemssection {
+  background-color: rgb(54, 53, 53);
+}
+.cartsection .cartgridsecction .price {
+  background-color: bisque;
+}
+
+.centercart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 #contact {
   width: 100%;
   min-height: 100vh;

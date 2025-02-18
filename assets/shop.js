@@ -10,6 +10,10 @@ import jsl from './images/shop/JORDAN+SPIZIKE+LOW.webp';
 
 const itemContainer = document.querySelector('.itemcontainer');
 const i = document.querySelector('.itemm');
+const sort = document.querySelector('#sort');
+const sO = document.querySelector('.sortoptions');
+const lTH = document.querySelector('#lth');
+const hTL = document.querySelector('#htl');
 
 const products = {
   1: {
@@ -68,10 +72,15 @@ const products = {
   },
 };
 
-Object.values(products).forEach((product) => {
-  let card = document.createElement('div');
-  card.classList.add('items');
-  card.innerHTML = `
+const cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function renderProducts(productList) {
+  itemContainer.innerHTML = '';
+
+  Object.entries(productList).forEach(([id, product]) => {
+    let card = document.createElement('div');
+    card.classList.add('items');
+    card.innerHTML = `
           <div class="item">
               <div class="item-head">
                   <img src="${product.img}" alt="${product.n}">
@@ -86,23 +95,52 @@ Object.values(products).forEach((product) => {
                           <p class="old">₹${product.op}</p>
                           <p class="new">₹${product.np}</p>
                       </div>
-                      <button class="cart-btn">
-                          Add to cart
+                      <button class="cart-btn" data-id="${id}">
+                          ${
+                            cart.some((item) => item.id === id)
+                              ? 'Added'
+                              : 'Add to cart'
+                          }
                       </button>
                   </div>
               </div>
           </div>
       `;
-  itemContainer.appendChild(card);
+    itemContainer.appendChild(card);
 
-  let cartBtn = card.querySelector('.cart-btn');
-  cartBtn.addEventListener('click', () => {
-    cartBtn.innerText = 'Added';
-    i.style.backgroundColor = 'red';
+    let heartIcon = card.querySelector('.heart');
+    heartIcon.addEventListener('click', () => {
+      heartIcon.classList.toggle('l');
+    });
+
+    let cartBtn = card.querySelector('.cart-btn');
+    cartBtn.addEventListener('click', () => {
+      addToCart(id, product, cartBtn);
+    });
   });
-});
-document.addEventListener('click', (event) => {
-  if (event.target.classList.contains('heart')) {
-    event.target.classList.toggle('l');
+}
+
+function addToCart(id, product, button) {
+  const exists = cart.find((item) => item.id === id);
+  if (!exists) {
+    cart.push({ id, ...product });
+    localStorage.setItem('cart', JSON.stringify(cart));
+    button.innerText = 'Added';
+    button.style.backgroundColor = 'red';
   }
+}
+
+lTH.addEventListener('click', () => {
+  const sortedProducts = Object.values(products).sort((a, b) => a.np - b.np);
+  renderProducts(sortedProducts);
 });
+
+hTL.addEventListener('click', () => {
+  const sortedProducts = Object.values(products).sort((a, b) => b.np - a.np);
+  renderProducts(sortedProducts);
+});
+
+sort.addEventListener('mouseenter', () => sO.classList.add('showoptions'));
+sort.addEventListener('mouseleave', () => sO.classList.remove('showoptions'));
+
+renderProducts(products);
