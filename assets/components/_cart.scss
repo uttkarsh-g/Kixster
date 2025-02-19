@@ -15,22 +15,71 @@
       text-align: center;
     }
   }
-  .cartgridsecction {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 1fr;
-
-    .contactsection {
-      background-color: rgb(133, 41, 41);
+  .cart-pannel {
+    width: 100%;
+    height: 90vh;
+    padding: 100px 50px 0px;
+    display: flex;
+    gap: 10px;
+    .address,
+    .cart-container {
+      height: 100%;
+      width: 50%;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 20px;
     }
-    .itemssection {
-      background-color: rgb(54, 53, 53);
-    }
-    .price {
-      background-color: bisque;
+    // .address {
+    //   // background-color: red;
+    // }
+    .cart-container {
+      background-color: blue;
     }
   }
 }
 .centercart {
   @include cf;
+}
+
+@media (max-width: 990px) {
+  .cartsection {
+    width: $f;
+    height: $vf;
+    background-color: #f5f5f5;
+    position: relative;
+    .emptycart {
+      flex-direction: column;
+      @include cf;
+      gap: 10px;
+      h3 {
+        font-family: $para;
+        font-weight: 600;
+        font-size: clamp(1.5rem, 4vw, 3rem);
+        line-height: 0.8;
+        text-align: center;
+      }
+    }
+    .cart-pannel {
+      width: 100%;
+      height: 90vh;
+      padding: 100px 20px 0px;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 10px;
+      .address,
+      .cart-container {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid black;
+        border-radius: 20px;
+      }
+      .address {
+        // background-color: red;
+      }
+      .cart-container {
+        background-color: blue;
+      }
+    }
+  }
 }

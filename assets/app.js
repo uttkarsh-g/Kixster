@@ -38,6 +38,17 @@ const products = {
   },
 };
 
+function adjustHeight() {
+  const realHeight = window.innerHeight;
+  document.documentElement.style.setProperty(
+    '--real-height',
+    `${realHeight}px`
+  );
+}
+
+window.addEventListener('resize', adjustHeight);
+window.addEventListener('load', adjustHeight);
+
 // Hero images
 
 img.forEach((e, i) => {

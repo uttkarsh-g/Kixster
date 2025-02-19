@@ -38,12 +38,42 @@
     </nav>
 
     <section class="cartsection">
-      <div class="cartgridsecction">
-        <div class="contactsection"></div>
-        <div class="itemssection"></div>
-        <div class="price"></div>
+      <div class="cart-pannel">
+        <div class="address">
+          <h3>Billing Address</h3>
+
+          <form action="" method="get">
+            <div class="name">
+              <label for="fullname">Full Name </label>
+              <input type="text" name="fullname" id="name" required />
+            </div>
+            <div class="emailadd">
+              <label for="emailadd">Email</label>
+              <input type="email" name="emailadd" id="email" required />
+            </div>
+            <div class="ad">
+              <label for="address">Address</label>
+              <input type="text" name="address" id="adr" required />
+            </div>
+            <div class="city">
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" required />
+            </div>
+            <div class="state">
+              <label for="state">State</label>
+              <input type="text" name="state" id="state" required />
+            </div>
+            <div class="zip">
+              <label for="zip">Zip</label>
+              <input type="text" name="zip" id="zip" required />
+            </div>
+            <div id="checkoutbtn">
+              <button type="submit" id="check">Make Payment</button>
+            </div>
+          </form>
+        </div>
+        <div class="cart-container"></div>
       </div>
-      <!-- <div class="cart-container"></div> -->
     </section>
     <div class="mm"></div>
   </body>

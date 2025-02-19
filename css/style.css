@@ -209,7 +209,7 @@ nav #navbar .hamburger {
   position: absolute;
   top: 0;
   right: -100%;
-  height: 100vh;
+  height: 100dvh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +298,7 @@ nav #navbar .active {
 }
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
   position: relative;
   -webkit-transition: 0.5s all ease-in;
@@ -324,7 +324,7 @@ nav #navbar .active {
 .hero .imge {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   top: 0;
   left: 0;
   z-index: 2;
@@ -341,7 +341,7 @@ nav #navbar .active {
 .hero .imge .img {
   position: absolute;
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -469,6 +469,9 @@ nav #navbar .active {
 }
 
 @media (max-width: 490px) {
+  .hero {
+    height: var(--real-height, 100dvh);
+  }
   .hero .air img {
     -webkit-transform: translate(-8%, 0) rotate(-22deg);
             transform: translate(-8%, 0) rotate(-22deg);
@@ -483,7 +486,7 @@ nav #navbar .active {
     height: 25%;
   }
   .hero .btn {
-    height: 220px;
+    height: 22.3vh;
     padding: 0 20px;
     margin-bottom: 20px;
   }
@@ -560,7 +563,7 @@ nav #navbar .active {
 .about .la,
 .about .aa,
 .about .fa {
-  height: 100vh;
+  height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1520,7 +1523,7 @@ nav #navbar .active {
 }
 #shoppingpage {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: #f5f5f5;
   position: relative;
 }
@@ -1714,7 +1717,7 @@ nav #navbar .active {
 }
 .cartsection {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f5f5f5;
   position: relative;
 }
@@ -1741,19 +1744,25 @@ nav #navbar .active {
   line-height: 0.8;
   text-align: center;
 }
-.cartsection .cartgridsecction {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
+.cartsection .cart-pannel {
+  width: 100%;
+  height: 90vh;
+  padding: 100px 50px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
 }
-.cartsection .cartgridsecction .contactsection {
-  background-color: rgb(133, 41, 41);
+.cartsection .cart-pannel .address,
+.cartsection .cart-pannel .cart-container {
+  height: 100%;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
 }
-.cartsection .cartgridsecction .itemssection {
-  background-color: rgb(54, 53, 53);
-}
-.cartsection .cartgridsecction .price {
-  background-color: bisque;
+.cartsection .cart-pannel .cart-container {
+  background-color: blue;
 }
 
 .centercart {
@@ -1768,9 +1777,64 @@ nav #navbar .active {
           justify-content: center;
 }
 
+@media (max-width: 990px) {
+  .cartsection {
+    width: 100%;
+    height: 100dvh;
+    background-color: #f5f5f5;
+    position: relative;
+  }
+  .cartsection .emptycart {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .cartsection .emptycart h3 {
+    font-family: "Mukta", serif;
+    font-weight: 600;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    line-height: 0.8;
+    text-align: center;
+  }
+  .cartsection .cart-pannel {
+    width: 100%;
+    height: 90vh;
+    padding: 100px 20px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .cartsection .cart-pannel .address,
+  .cartsection .cart-pannel .cart-container {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  .cartsection .cart-pannel .cart-container {
+    background-color: blue;
+  }
+}
 #contact {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   background-color: #f5f5f5;
 }
 #contact #heading {
@@ -1935,7 +1999,7 @@ nav #navbar .active {
 }
 #authpage {
   width: 100%;
-  height: 100vh;
+  height: 100dvh;
   background-color: #f5f5f5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2089,7 +2153,7 @@ nav #navbar .active {
 @media (max-width: 769px) {
   #authpage {
     width: 100%;
-    height: 100vh;
+    height: 100dvh;
     background-color: #f5f5f5;
     display: -webkit-box;
     display: -ms-flexbox;
