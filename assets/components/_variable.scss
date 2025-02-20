@@ -94,3 +94,9 @@ $f: 100%;
   font-family: $para;
   font-weight: 400;
 }
+
+@mixin img {
+  height: $f;
+  width: $f;
+  object-fit: cover;
+}
