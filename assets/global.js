@@ -4,6 +4,8 @@ const m = document.querySelector('.menu');
 const h = document.querySelector('.hamburger');
 const navlinks = document.querySelectorAll('.hamburger a');
 const b = document.body;
+const i = document.querySelector('.itemm');
+
 const mouse = document.querySelector('.mm');
 
 m.addEventListener('click', (e) => {
@@ -32,8 +34,24 @@ const hide = () => {
 const show = () => {
   mouse.style.opacity = 1;
 };
-b.addEventListener('mouseenter', show);
-b.addEventListener('mouseleave', hide);
-b.addEventListener('mousemove', (arg) => {
-  move(arg.x, arg.y);
+const mQ = window.matchMedia('(min-width: 500px)');
+if (mQ.matches) {
+  b.addEventListener('mouseenter', show);
+  b.addEventListener('mouseleave', hide);
+  b.addEventListener('mousemove', (arg) => {
+    move(arg.x, arg.y);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  function updateCartIcon() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length > 0) {
+      i.classList.add('added');
+    } else {
+      i.classList.remove('added');
+    }
+  }
+
+  updateCartIcon();
 });

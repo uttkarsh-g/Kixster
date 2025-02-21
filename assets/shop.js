@@ -24,13 +24,13 @@ const products = {
   },
   2: {
     img: ocb,
-    n: 'ON RUNNING CLOUD',
+    n: 'On Running Cloud',
     op: 19500,
     np: 17999,
   },
   3: {
     img: ye,
-    n: 'ADIDAS YEEZY 350',
+    n: 'Adidas Yeezy 350',
     op: 20000,
     np: 14999,
   },
@@ -42,13 +42,13 @@ const products = {
   },
   5: {
     img: y,
-    n: 'ADIDAS YEEZY FOAM',
+    n: 'ADIDAS Yeezy Foam',
     op: 10000,
     np: 8999,
   },
   6: {
     img: ocw,
-    n: 'ON RUNNING CLOUDTILT',
+    n: 'ON Running Cloudtilt',
     op: 23500,
     np: 21999,
   },
@@ -74,6 +74,19 @@ const products = {
 
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 
+document.addEventListener('DOMContentLoaded', () => {
+  function updateCartIcon() {
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    if (cart.length > 0) {
+      i.classList.add('added');
+    } else {
+      i.classList.remove('added');
+    }
+  }
+
+  updateCartIcon();
+});
+
 function renderProducts(productList) {
   itemContainer.innerHTML = '';
 
@@ -98,7 +111,7 @@ function renderProducts(productList) {
                       <button class="cart-btn" data-id="${id}">
                           ${
                             cart.some((item) => item.id === id)
-                              ? 'Added'
+                              ? 'In cart'
                               : 'Add to cart'
                           }
                       </button>
@@ -125,8 +138,9 @@ function addToCart(id, product, button) {
   if (!exists) {
     cart.push({ id, ...product });
     localStorage.setItem('cart', JSON.stringify(cart));
-    button.innerText = 'Added';
-    button.style.backgroundColor = 'red';
+    button.innerText = 'Added to cart';
+    i.classList.add('added');
+    updateCartClass();
   }
 }
 

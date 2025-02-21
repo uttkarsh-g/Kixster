@@ -1,17 +1,35 @@
 const cM = document.querySelector('.cartsection');
 const cartContainer = document.querySelector('.cart-container');
+const price = document.querySelector('.amt-list');
+const total = document.querySelector('#grandtotal');
+const loginpage = document.querySelector('.login');
+const iF = document.querySelectorAll('form input');
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
+const isLogin = false;
+
+document.querySelector('form').addEventListener('submit', (e) => {
+  e.preventDefault();
+  if (!isLogin) {
+    loginpage.classList.add('loginshow');
+  }
+});
+
+loginpage.addEventListener('click', () => {
+  loginpage.classList.remove('loginshow');
+  iF.forEach((allInp) => {
+    allInp.value = '';
+  });
+});
 
 function renderCart() {
   if (cart.length === 0) {
     cM.classList.add('centercart');
-    cM.innerHTML = ` 
+    cM.innerHTML = `
       <div class="emptycart">
         <h3>No kicks here yet! Find your perfect pair now.</h3>
         <button><a href="shop.html"> Shop Now </a></button>
       </div>`;
-    cartContainer.innerHTML = ''; // Ensure cart container is empty
-    return;
+    cartContainer.innerHTML = '';
   }
 
   cartContainer.innerHTML = cart
@@ -33,6 +51,16 @@ function renderCart() {
       </div>`
     )
     .join('');
+  price.innerHTML = cart
+    .map(
+      (item) => ` <div class="item-amt">
+                <p>1 x ${item.n}</p>
+                <p>₹${item.np}</p>
+              </div>`
+    )
+    .join('');
+  const totalAmount = cart.reduce((acc, item) => acc + item.np, 0);
+  total.innerText = `₹${totalAmount}`;
 
   document.querySelectorAll('.remove-btn').forEach((btn) => {
     btn.addEventListener('click', (e) => {
@@ -49,6 +77,9 @@ function removeFromCart(id) {
   if (index > -1) {
     cart.splice(index, 1);
     localStorage.setItem('cart', JSON.stringify(cart));
+    if (cart.length === 0) {
+      document.querySelector('.itemm').classList.remove('added');
+    }
     renderCart();
   }
 }
