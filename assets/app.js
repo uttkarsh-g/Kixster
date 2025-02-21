@@ -38,17 +38,6 @@ const products = {
   },
 };
 
-function adjustHeight() {
-  const realHeight = window.innerHeight;
-  document.documentElement.style.setProperty(
-    '--real-height',
-    `${realHeight}px`
-  );
-}
-
-window.addEventListener('resize', adjustHeight);
-window.addEventListener('load', adjustHeight);
-
 // Hero images
 
 img.forEach((e, i) => {
@@ -86,16 +75,13 @@ Object.values(products).forEach((product) => {
             <div class="card-cnt">
                 <div class="pal">
                     <p>${product.n}</p>
-                    <i class="ri-heart-fill heart"></i>
                 </div>
                 <div class="pab">
                     <div class="price">
                         <p class="o">₹${product.op}</p>
                         <p class="n">₹${product.np}</p>
                     </div>
-                    <button class="hover cls-btn add-to-cart">
-                        Add to cart
-                    </button>
+                  
                 </div>
             </div>
         </div>
@@ -107,18 +93,21 @@ document.addEventListener('click', (event) => {
     event.target.classList.toggle('love');
   }
 });
-container.addEventListener('mouseenter', () => {
-  mouse.style.opacity = 0;
-});
-container.addEventListener('mouseleave', () => {
-  mouse.style.opacity = 1;
-});
+const mQ = window.matchMedia('(min-width: 500px)');
+if (mQ.matches) {
+  container.addEventListener('mouseenter', () => {
+    mouse.style.opacity = 0;
+  });
+  container.addEventListener('mouseleave', () => {
+    mouse.style.opacity = 1;
+  });
+}
 
 const showCase = () => {
   let swiper = new Swiper('.swiper', {
     loop: true,
-    spaceBetween: 10,
-    grabCursor: true,
+    // grabCursor: true,
+    // spaceBetween: 30,
     autoplay: {
       delay: 3500,
       disableOnInteraction: false,
@@ -138,4 +127,4 @@ const showCase = () => {
     },
   });
 };
-// showCase();
+showCase();

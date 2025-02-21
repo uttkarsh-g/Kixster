@@ -54,48 +54,48 @@ gsap.registerPlugin(ScrollTrigger);
 // });
 
 // // // // about section
-let horizontalScroll = gsap.matchMedia();
+// let horizontalScroll = gsap.matchMedia();
 
-horizontalScroll.add('(min-width: 769px)', () => {
-  const hori = gsap.utils.toArray('#about .h');
+// horizontalScroll.add('(min-width: 769px)', () => {
+//   const hori = gsap.utils.toArray('#about .h');
 
-  gsap.to(hori, {
-    xPercent: -100 * (hori.length - 1),
-    delay: 5,
-    scrollTrigger: {
-      trigger: '#about',
-      pin: true,
-      scrub: 1,
-      end: '+=4000',
-    },
-  });
+//   gsap.to(hori, {
+//     xPercent: -100 * (hori.length - 1),
+//     delay: 5,
+//     scrollTrigger: {
+//       trigger: '#about',
+//       pin: true,
+//       scrub: 1,
+//       end: '+=4000',
+//     },
+//   });
 
-  gsap.from('.la', {
-    y: 50,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: '.la',
-      scroller: 'body',
-      start: '0% 30%',
-      end: '10% 20%',
-    },
-  });
-  gsap.from('.aa', {
-    y: -500,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: '.aa',
-      scroller: 'body',
-      start: '80% 30%',
-    },
-  });
-  gsap.from('.fa', {
-    opacity: 0,
-    scrollTrigger: {
-      trigger: '.fa',
-      scroller: 'body',
-      start: '2055px 30%',
-      end: '+=3500',
-    },
-  });
-});
+//   gsap.from('.la', {
+//     y: 50,
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: '.la',
+//       scroller: 'body',
+//       start: '0% 30%',
+//       end: '10% 20%',
+//     },
+//   });
+//   gsap.from('.aa', {
+//     y: -500,
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: '.aa',
+//       scroller: 'body',
+//       start: '80% 30%',
+//     },
+//   });
+//   gsap.from('.fa', {
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: '.fa',
+//       scroller: 'body',
+//       start: '2055px 30%',
+//       end: '+=3500',
+//     },
+//   });
+// });

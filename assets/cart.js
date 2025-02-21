@@ -1,8 +1,11 @@
+const b = document.body;
+
 const cM = document.querySelector('.cartsection');
 const cartContainer = document.querySelector('.cart-container');
 const price = document.querySelector('.amt-list');
 const total = document.querySelector('#grandtotal');
 const loginpage = document.querySelector('.login');
+const cLP = document.querySelector('.closelogin');
 const iF = document.querySelectorAll('form input');
 const cart = JSON.parse(localStorage.getItem('cart')) || [];
 const isLogin = false;
@@ -11,11 +14,14 @@ document.querySelector('form').addEventListener('submit', (e) => {
   e.preventDefault();
   if (!isLogin) {
     loginpage.classList.add('loginshow');
+    b.classList.toggle('stop');
   }
 });
-
-loginpage.addEventListener('click', () => {
+cLP.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.stopPropagation();
   loginpage.classList.remove('loginshow');
+  b.classList.toggle('stop');
   iF.forEach((allInp) => {
     allInp.value = '';
   });

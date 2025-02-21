@@ -168,7 +168,7 @@ nav #navbar .cartanmenu .cart .itemm {
   transition: 0.2s;
 }
 nav #navbar .cartanmenu .cart .added {
-  background-color: rgb(223, 11, 11);
+  background-color: rgb(244, 74, 74);
 }
 nav #navbar .cartanmenu .cart a {
   text-decoration: none;
@@ -589,7 +589,7 @@ nav #navbar .active {
   color: #000;
   font-size: 5vw;
   font-family: "Inter", serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .about .la .cnt p {
@@ -608,7 +608,7 @@ nav #navbar .active {
   color: #000;
   font-size: 5vw;
   font-family: "Inter", serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .about .aa .cnt p {
@@ -622,7 +622,7 @@ nav #navbar .active {
   color: #000;
   font-size: 5vw;
   font-family: "Inter", serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-transform: uppercase;
 }
 .about .fa .cnt p {
@@ -891,27 +891,10 @@ nav #navbar .active {
   color: #000;
   font-size: 5vw;
   font-family: "Inter", serif;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   gap: 20px;
-  font-size: 5vw;
-}
-#shop #shop-cnt h2 #emoji {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 60px;
-  width: 60px;
-}
-#shop #shop-cnt h2 #emoji img {
-  height: 100%;
-  width: 100%;
+  font-size: clamp(40px, 5vw, 5rem);
 }
 #shop #shop-cnt #navigation {
   display: -webkit-box;
@@ -927,7 +910,7 @@ nav #navbar .active {
 }
 #shop #shop-cnt #navigation h4 {
   color: #000;
-  font-size: 30px;
+  font-size: clamp(25px, 2.2vw, 2.5rem);
   font-family: "Inter", serif;
 }
 #shop #shop-cnt #container {
@@ -944,13 +927,13 @@ nav #navbar .active {
   margin-top: 30px;
 }
 #shop #shop-cnt #container .swiper {
-  width: 80%;
   height: 100%;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 20px;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
   display: -webkit-box;
@@ -997,24 +980,12 @@ nav #navbar .active {
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal {
   padding: 2% 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal p {
   font-family: "Inter", serif;
   font-weight: 700;
   font-size: 23px;
   color: #000;
-}
-#shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal i {
-  font-size: 25px;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab {
   height: 50%;
@@ -1024,9 +995,6 @@ nav #navbar .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price {
   display: -webkit-box;
@@ -1035,9 +1003,6 @@ nav #navbar .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   gap: 10px;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o,
@@ -1048,28 +1013,24 @@ nav #navbar .active {
   -webkit-text-decoration: 2px red line-through;
           text-decoration: 2px red line-through;
 }
-#shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: inherit;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  font-size: 16px;
-  font-family: "Inter", serif;
-  border-radius: 20px;
-  padding: 5px 10px;
-  background-color: black;
-  color: white;
-}
 
 @media (max-width: 768px) {
   #shop {
+    width: 100%;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0 20px;
   }
   #shop #shop-cnt {
-    padding: 100px 0 20px 0;
+    padding: 100px 0 0px 0;
     width: 100%;
   }
   #shop #shop-cnt h2 {
@@ -1082,27 +1043,10 @@ nav #navbar .active {
     color: #000;
     font-size: 5vw;
     font-family: "Inter", serif;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     gap: 20px;
-    font-size: 5vw;
-  }
-  #shop #shop-cnt h2 #emoji {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    height: 60px;
-    width: 60px;
-  }
-  #shop #shop-cnt h2 #emoji img {
-    height: 100%;
-    width: 100%;
+    font-size: clamp(40px, 5vw, 5rem);
   }
   #shop #shop-cnt #navigation {
     display: -webkit-box;
@@ -1114,12 +1058,13 @@ nav #navbar .active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 5px 0;
+    margin: 0;
   }
   #shop #shop-cnt #navigation h4 {
     color: #000;
-    font-size: 30px;
+    font-size: clamp(25px, 2.2vw, 2.5rem);
     font-family: "Inter", serif;
+    font-weight: 400;
   }
   #shop #shop-cnt #container {
     height: 480px;
@@ -1132,16 +1077,16 @@ nav #navbar .active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
   }
   #shop #shop-cnt #container .swiper {
-    width: 100%;
     height: 100%;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    gap: 20px;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
     display: -webkit-box;
@@ -1155,7 +1100,7 @@ nav #navbar .active {
             align-items: center;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card {
-    width: 300px;
+    width: 350px;
     height: 90%;
     border-radius: 15px;
     -webkit-user-select: none;
@@ -1188,25 +1133,12 @@ nav #navbar .active {
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal {
     padding: 2% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal p {
     font-family: "Inter", serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 23px;
     color: #000;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal i {
-    font-size: 25px;
-    cursor: pointer;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab {
     height: 50%;
@@ -1216,9 +1148,7 @@ nav #navbar .active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    font-family: "Mukta", serif;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price {
     display: -webkit-box;
@@ -1227,9 +1157,6 @@ nav #navbar .active {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     gap: 10px;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o,
@@ -1240,21 +1167,6 @@ nav #navbar .active {
     -webkit-text-decoration: 2px red line-through;
             text-decoration: 2px red line-through;
   }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: inherit;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 16px;
-    font-family: "Inter", serif;
-    border-radius: 20px;
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
-  }
 }
 @media (min-width: 769px) and (max-width: 1024px) {
   .swiper-slide {
@@ -1264,266 +1176,6 @@ nav #navbar .active {
 @media (min-width: 1025px) {
   .swiper-slide {
     width: 33.33% !important;
-  }
-}
-@media (min-width: 769px) and (max-width: 1015px) {
-  #shop {
-    padding: 0 20px;
-  }
-  #shop #shop-cnt h2 {
-    font-size: 8vw;
-    margin-bottom: 10px;
-  }
-  #shop #shop-cnt h2 #emoji {
-    height: 7%;
-    width: 7%;
-  }
-  #shop #shop-cnt #navigation h4 {
-    font-size: 30px;
-  }
-  #shop #shop-cnt #container .swiper {
-    width: 100%;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card {
-    width: 350px;
-    height: 90%;
-    border-radius: 15px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img {
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img:hover img {
-    scale: 1.1;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt {
-    height: 20%;
-    padding: 0 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal {
-    padding: 2% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal p {
-    font-family: "Inter", serif;
-    font-weight: 700;
-    font-size: 23px;
-    color: #000;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal i {
-    font-size: 25px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab {
-    height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .o,
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .n {
-    font-size: 18px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .o {
-    -webkit-text-decoration: 2px red line-through;
-            text-decoration: 2px red line-through;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: inherit;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 16px;
-    font-family: "Inter", serif;
-    border-radius: 20px;
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
-  }
-}
-@media (min-width: 1015px) and (max-width: 1300px) {
-  #shop {
-    padding: 0 20px;
-  }
-  #shop #shop-cnt h2 {
-    font-size: 8vw;
-    margin-bottom: 10px;
-  }
-  #shop #shop-cnt h2 #emoji {
-    height: 7%;
-    width: 7%;
-  }
-  #shop #shop-cnt #navigation h4 {
-    font-size: 30px;
-  }
-  #shop #shop-cnt #container .swiper {
-    width: 100%;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card {
-    width: 350px;
-    height: 90%;
-    border-radius: 15px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img {
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img img {
-    height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-img:hover img {
-    scale: 1.1;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt {
-    height: 20%;
-    padding: 0 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal {
-    padding: 2% 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal p {
-    font-family: "Inter", serif;
-    font-weight: 700;
-    font-size: 23px;
-    color: #000;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pal i {
-    font-size: 25px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab {
-    height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .o,
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .n {
-    font-size: 18px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab .price .o {
-    -webkit-text-decoration: 2px red line-through;
-            text-decoration: 2px red line-through;
-  }
-  #shop #shop-cnt #container .swiper .swiper-slide .card .card-cnt .pab button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    color: inherit;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    font-size: 16px;
-    font-family: "Inter", serif;
-    border-radius: 20px;
-    padding: 5px 10px;
-    background-color: black;
-    color: white;
   }
 }
 #shoppingpage {
@@ -2028,15 +1680,81 @@ nav #navbar .active {
 
 .login {
   width: 100%;
-  height: 100dvh;
-  background-color: red;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   top: 0;
   display: none;
+  z-index: 80;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.096);
+}
+.login .loginaction {
+  width: 320px;
+  height: 500px;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+.login .loginaction .closebtn {
+  text-align: end;
+}
+.login .loginaction .closebtn i {
+  font-size: 30px;
+  cursor: pointer;
+}
+.login .loginaction .logo {
+  text-align: center;
+  margin: 50px 0;
+}
+.login .loginaction .logo h1 {
+  font-family: "Inter", serif;
+  font-weight: 600;
+  font-size: 70px;
+}
+.login .loginaction .logincnt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.login .loginaction .logincnt p {
+  font-family: "Mukta", serif;
+  line-height: 1.3;
+  font-size: 20px;
+  text-align: center;
+}
+.login .loginaction .logincnt a {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-family: "Inter", serif;
+}
+.login .loginaction .logincnt a:hover {
+  text-decoration: underline;
 }
 
 .loginshow {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 990px) {
