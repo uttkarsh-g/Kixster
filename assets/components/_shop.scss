@@ -1,6 +1,6 @@
 #shop {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   @include cf;
   padding: 0 50px;
   #shop-cnt {
@@ -18,8 +18,35 @@
       margin: 5px 0;
       h4 {
         color: $black;
-        font-size: clamp(25px, 2.2vw, 2.5rem);
+        font-size: clamp(18px, 2.2vw, 1.4rem);
         font-family: $head;
+        font-weight: 400;
+      }
+      .navbtn {
+        @include cf;
+
+        a {
+          margin-right: 20px;
+          font-size: larger;
+          text-decoration: none;
+          color: $black;
+          font-family: $para;
+          &:hover {
+            color: rgb(92, 92, 92);
+          }
+        }
+        #nla,
+        #nra {
+          background-color: black;
+          padding: 10px 10px;
+          border-radius: 50%;
+          color: white;
+          font-size: larger;
+          cursor: pointer;
+          &:last-child {
+            margin-left: 5px;
+          }
+        }
       }
     }
     #container {
@@ -27,22 +54,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-top: 30px;
+      margin: 20px auto 0 auto;
+      width: 100%;
+      max-width: 1200px;
       .swiper {
-        // width: 0%;
+        width: 100%;
         height: 100%;
-
         .swiper-wrapper {
-          display: flex;
-          gap: 20px;
-
+          height: 95%;
           .swiper-slide {
             display: flex;
             justify-content: center;
             align-items: center;
-
             .card {
-              width: 350px;
+              width: 90%;
+              max-width: 350px;
               height: 90%;
               border-radius: 15px;
               user-select: none;
@@ -71,7 +97,7 @@
                   p {
                     font-family: $head;
                     font-weight: 700;
-                    font-size: 23px;
+                    font-size: 20px;
                     color: $black;
                   }
                 }
@@ -84,6 +110,7 @@
                     .o,
                     .n {
                       font-size: 18px;
+                      font-family: $para;
                     }
                     .o {
                       text-decoration: 2px red line-through;
@@ -94,359 +121,57 @@
             }
           }
         }
+        .swiper-scrollbar {
+          background-color: transparent;
+          margin-top: 20px;
+        }
       }
     }
   }
 }
 
-// .hover:hover {
-//   text-decoration: underline;
-// }
-
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #shop {
-    width: 100%;
-    min-height: 100vh;
-    @include cf;
     padding: 0 20px;
     #shop-cnt {
-      padding: 100px 0 0px 0;
-      width: $f;
+      padding: 100px 0 0;
       h2 {
-        @include ch;
-        @include head;
-        gap: 20px;
-        font-size: clamp(40px, 5vw, 5rem);
+        line-height: 0.9;
       }
       #navigation {
         @include ch;
         justify-content: space-between;
-        margin: 0;
+        margin: 5px 0;
         h4 {
           color: $black;
-          font-size: clamp(25px, 2.2vw, 2.5rem);
+          font-size: clamp(18px, 2.2vw, 1.4rem);
           font-family: $head;
           font-weight: 400;
         }
+        .navbtn {
+          display: none;
+        }
       }
       #container {
-        height: 480px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 10px;
+        margin: 0;
         .swiper {
-          // width: 0%;
-          height: 100%;
-
           .swiper-wrapper {
-            display: flex;
-            gap: 20px;
-
+            height: 100%;
             .swiper-slide {
-              display: flex;
-              justify-content: center;
-              align-items: center;
-
               .card {
-                width: 350px;
-                height: 90%;
-                border-radius: 15px;
-                user-select: none;
-                overflow: hidden;
-                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-                .card-img {
-                  width: $f;
-                  height: 80%;
-                  overflow: hidden;
-                  img {
-                    @include ff;
-                    object-fit: cover;
-                    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-                  }
-                }
                 .card-img:hover {
                   img {
-                    scale: 1.1;
-                  }
-                }
-                .card-cnt {
-                  height: 20%;
-                  padding: 0 10px;
-                  .pal {
-                    padding: 2% 0;
-                    p {
-                      font-family: $head;
-                      font-weight: 500;
-                      font-size: 23px;
-                      color: $black;
-                    }
-                  }
-                  .pab {
-                    height: 50%;
-                    @include ch;
-                    font-family: $para;
-                    .price {
-                      @include ch;
-                      gap: 10px;
-                      .o,
-                      .n {
-                        font-size: 18px;
-                      }
-                      .o {
-                        text-decoration: 2px red line-through;
-                      }
-                    }
+                    scale: 1;
                   }
                 }
               }
             }
+          }
+          .swiper-scrollbar {
+            margin-top: 5px;
           }
         }
       }
     }
   }
 }
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .swiper-slide {
-    width: 50% !important;
-  }
-}
-
-@media (min-width: 1025px) {
-  .swiper-slide {
-    width: 33.33% !important;
-  }
-}
-
-// @media (max-width: 769px) {
-//   #shop {
-//     padding: 0 20px;
-//     #shop-cnt {
-//       padding: 90px 0 10px 0;
-//       h2 {
-//         font-size: 6.2vw;
-//         margin-bottom: 10px;
-//         #emoji {
-//           height: 7%;
-//           width: 7%;
-//         }
-//       }
-//       #navigation {
-//         h4 {
-//           font-size: 4.5vw;
-//         }
-//       }
-//       #container {
-//         .swiper {
-//           width: $f;
-//         }
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 769px) and (max-width: 1015px) {
-//   #shop {
-//     padding: 0 20px;
-//     #shop-cnt {
-//       h2 {
-//         font-size: 8vw;
-//         margin-bottom: 10px;
-//         #emoji {
-//           height: 7%;
-//           width: 7%;
-//         }
-//       }
-//       #navigation {
-//         h4 {
-//           font-size: 30px;
-//         }
-//       }
-//       #container {
-//         .swiper {
-//           width: $f;
-//           .swiper-slide {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-
-//             .card {
-//               width: 350px;
-//               height: 90%;
-//               border-radius: 15px;
-//               user-select: none;
-//               overflow: hidden;
-//               box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-//               .card-img {
-//                 width: $f;
-//                 height: 80%;
-//                 overflow: hidden;
-//                 img {
-//                   @include ff;
-//                   object-fit: cover;
-//                   transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-//                 }
-//               }
-//               .card-img:hover {
-//                 img {
-//                   scale: 1.1;
-//                 }
-//               }
-//               .card-cnt {
-//                 height: 20%;
-//                 padding: 0 10px;
-//                 .pal {
-//                   padding: 2% 0;
-//                   @include ch;
-//                   justify-content: space-between;
-//                   p {
-//                     font-family: $head;
-//                     font-weight: 700;
-//                     font-size: 23px;
-//                     color: $black;
-//                   }
-//                   i {
-//                     font-size: 25px;
-//                   }
-//                 }
-//                 .pab {
-//                   height: 50%;
-//                   @include ch;
-//                   justify-content: space-between;
-//                   .price {
-//                     @include ch;
-//                     justify-content: space-between;
-//                     gap: 10px;
-//                     .o,
-//                     .n {
-//                       font-size: 18px;
-//                     }
-//                     .o {
-//                       text-decoration: 2px red line-through;
-//                     }
-//                   }
-//                   button {
-//                     border: none;
-//                     background-color: transparent;
-//                     cursor: pointer;
-//                     color: inherit;
-//                     height: fit-content;
-//                     font-size: 16px;
-//                     font-family: $head;
-//                     border-radius: 20px;
-//                     padding: 5px 10px;
-//                     background-color: black;
-//                     color: white;
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-// @media (min-width: 1015px) and (max-width: 1300px) {
-//   #shop {
-//     padding: 0 20px;
-//     #shop-cnt {
-//       h2 {
-//         font-size: 8vw;
-//         margin-bottom: 10px;
-//         #emoji {
-//           height: 7%;
-//           width: 7%;
-//         }
-//       }
-//       #navigation {
-//         h4 {
-//           font-size: 30px;
-//         }
-//       }
-//       #container {
-//         .swiper {
-//           width: $f;
-//           .swiper-slide {
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-
-//             .card {
-//               width: 350px;
-//               height: 90%;
-//               border-radius: 15px;
-//               user-select: none;
-//               overflow: hidden;
-//               box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-//               .card-img {
-//                 width: $f;
-//                 height: 80%;
-//                 overflow: hidden;
-//                 img {
-//                   @include ff;
-//                   object-fit: cover;
-//                   transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-//                 }
-//               }
-//               .card-img:hover {
-//                 img {
-//                   scale: 1.1;
-//                 }
-//               }
-//               .card-cnt {
-//                 height: 20%;
-//                 padding: 0 10px;
-//                 .pal {
-//                   padding: 2% 0;
-//                   @include ch;
-//                   justify-content: space-between;
-//                   p {
-//                     font-family: $head;
-//                     font-weight: 700;
-//                     font-size: 23px;
-//                     color: $black;
-//                   }
-//                   i {
-//                     font-size: 25px;
-//                   }
-//                 }
-//                 .pab {
-//                   height: 50%;
-//                   @include ch;
-//                   justify-content: space-between;
-//                   .price {
-//                     @include ch;
-//                     justify-content: space-between;
-//                     gap: 10px;
-//                     .o,
-//                     .n {
-//                       font-size: 18px;
-//                     }
-//                     .o {
-//                       text-decoration: 2px red line-through;
-//                     }
-//                   }
-//                   button {
-//                     border: none;
-//                     background-color: transparent;
-//                     cursor: pointer;
-//                     color: inherit;
-//                     height: fit-content;
-//                     font-size: 16px;
-//                     font-family: $head;
-//                     border-radius: 20px;
-//                     padding: 5px 10px;
-//                     background-color: black;
-//                     color: white;
-//                   }
-//                 }
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }

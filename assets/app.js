@@ -81,7 +81,7 @@ Object.values(products).forEach((product) => {
                         <p class="o">₹${product.op}</p>
                         <p class="n">₹${product.np}</p>
                     </div>
-                  
+
                 </div>
             </div>
         </div>
@@ -104,25 +104,24 @@ if (mQ.matches) {
 }
 
 const showCase = () => {
-  let swiper = new Swiper('.swiper', {
-    loop: true,
-    // grabCursor: true,
-    // spaceBetween: 30,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
+  let swiper = new Swiper('.mySwiper', {
     slidesPerView: 1,
+    spaceBetween: 10,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '#nra',
+      prevEl: '#nla',
     },
     breakpoints: {
       768: {
         slidesPerView: 2,
+        spaceBetween: 10,
       },
       1024: {
         slidesPerView: 3,
+        spaceBetween: 10,
       },
     },
   });

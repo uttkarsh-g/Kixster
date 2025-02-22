@@ -75,14 +75,14 @@
     }
   }
   .a {
-    @include img;
+    @include imgbtn;
   }
   .s {
     transform: translate(0, 15%) rotate(40deg);
     height: 120%;
   }
   .j {
-    @include img;
+    @include imgbtn;
   }
 
   .scrol {

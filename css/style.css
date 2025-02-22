@@ -420,10 +420,10 @@ nav #navbar .active {
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.212);
 }
 .hero .a {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero .s {
   -webkit-transform: translate(0, 15%) rotate(40deg);
@@ -431,10 +431,10 @@ nav #navbar .active {
   height: 120%;
 }
 .hero .j {
-  height: 100%;
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: 70%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .hero .scrol {
   height: 50px;
@@ -568,7 +568,7 @@ nav #navbar .active {
 .about .la,
 .about .aa,
 .about .fa {
-  height: 100dvh;
+  min-height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,11 +595,7 @@ nav #navbar .active {
 .about .la .cnt p {
   font-size: 30px;
   font-family: "Mukta", serif;
-}
-.about .la .cnt p #bold {
-  font-size: 40px;
-  color: #000;
-  font-weight: 900;
+  font-weight: 200;
 }
 .about .aa .cnt {
   padding: 0 100px;
@@ -614,6 +610,7 @@ nav #navbar .active {
 .about .aa .cnt p {
   font-size: 30px;
   font-family: "Mukta", serif;
+  font-weight: 200;
 }
 .about .fa .cnt {
   padding: 0 100px;
@@ -628,6 +625,7 @@ nav #navbar .active {
 .about .fa .cnt p {
   font-size: 30px;
   font-family: "Mukta", serif;
+  font-weight: 200;
 }
 
 .star {
@@ -865,7 +863,7 @@ nav #navbar .active {
 }
 #shop {
   width: 100%;
-  min-height: 100vh;
+  min-height: 100dvh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -910,8 +908,43 @@ nav #navbar .active {
 }
 #shop #shop-cnt #navigation h4 {
   color: #000;
-  font-size: clamp(25px, 2.2vw, 2.5rem);
+  font-size: clamp(18px, 2.2vw, 1.4rem);
   font-family: "Inter", serif;
+  font-weight: 400;
+}
+#shop #shop-cnt #navigation .navbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#shop #shop-cnt #navigation .navbtn a {
+  margin-right: 20px;
+  font-size: larger;
+  text-decoration: none;
+  color: #000;
+  font-family: "Mukta", serif;
+}
+#shop #shop-cnt #navigation .navbtn a:hover {
+  color: rgb(92, 92, 92);
+}
+#shop #shop-cnt #navigation .navbtn #nla,
+#shop #shop-cnt #navigation .navbtn #nra {
+  background-color: black;
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
+#shop #shop-cnt #navigation .navbtn #nla:last-child,
+#shop #shop-cnt #navigation .navbtn #nra:last-child {
+  margin-left: 5px;
 }
 #shop #shop-cnt #container {
   height: 480px;
@@ -924,16 +957,16 @@ nav #navbar .active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
+  margin: 20px auto 0 auto;
+  width: 100%;
+  max-width: 1200px;
 }
 #shop #shop-cnt #container .swiper {
+  width: 100%;
   height: 100%;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 20px;
+  height: 95%;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
   display: -webkit-box;
@@ -947,7 +980,8 @@ nav #navbar .active {
           align-items: center;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card {
-  width: 350px;
+  width: 90%;
+  max-width: 350px;
   height: 90%;
   border-radius: 15px;
   -webkit-user-select: none;
@@ -984,7 +1018,7 @@ nav #navbar .active {
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal p {
   font-family: "Inter", serif;
   font-weight: 700;
-  font-size: 23px;
+  font-size: 20px;
   color: #000;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab {
@@ -1008,45 +1042,26 @@ nav #navbar .active {
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o,
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .n {
   font-size: 18px;
+  font-family: "Mukta", serif;
 }
 #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o {
   -webkit-text-decoration: 2px red line-through;
           text-decoration: 2px red line-through;
 }
+#shop #shop-cnt #container .swiper .swiper-scrollbar {
+  background-color: transparent;
+  margin-top: 20px;
+}
 
-@media (max-width: 768px) {
+@media (max-width: 500px) {
   #shop {
-    width: 100%;
-    min-height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     padding: 0 20px;
   }
   #shop #shop-cnt {
-    padding: 100px 0 0px 0;
-    width: 100%;
+    padding: 100px 0 0;
   }
   #shop #shop-cnt h2 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #000;
-    font-size: 5vw;
-    font-family: "Inter", serif;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    gap: 20px;
-    font-size: clamp(40px, 5vw, 5rem);
+    line-height: 0.9;
   }
   #shop #shop-cnt #navigation {
     display: -webkit-box;
@@ -1058,124 +1073,28 @@ nav #navbar .active {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin: 0;
+    margin: 5px 0;
   }
   #shop #shop-cnt #navigation h4 {
     color: #000;
-    font-size: clamp(25px, 2.2vw, 2.5rem);
+    font-size: clamp(18px, 2.2vw, 1.4rem);
     font-family: "Inter", serif;
     font-weight: 400;
   }
-  #shop #shop-cnt #container {
-    height: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 10px;
+  #shop #shop-cnt #navigation .navbtn {
+    display: none;
   }
-  #shop #shop-cnt #container .swiper {
-    height: 100%;
+  #shop #shop-cnt #container {
+    margin: 0;
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card {
-    width: 350px;
-    height: 90%;
-    border-radius: 15px;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    overflow: hidden;
-    -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.212);
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-img {
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-img img {
     height: 100%;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -webkit-transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: 0.5s all cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-img:hover img {
-    scale: 1.1;
+    scale: 1;
   }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt {
-    height: 20%;
-    padding: 0 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal {
-    padding: 2% 0;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pal p {
-    font-family: "Inter", serif;
-    font-weight: 500;
-    font-size: 23px;
-    color: #000;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab {
-    height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: "Mukta", serif;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 10px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o,
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .n {
-    font-size: 18px;
-  }
-  #shop #shop-cnt #container .swiper .swiper-wrapper .swiper-slide .card .card-cnt .pab .price .o {
-    -webkit-text-decoration: 2px red line-through;
-            text-decoration: 2px red line-through;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .swiper-slide {
-    width: 50% !important;
-  }
-}
-@media (min-width: 1025px) {
-  .swiper-slide {
-    width: 33.33% !important;
+  #shop #shop-cnt #container .swiper .swiper-scrollbar {
+    margin-top: 5px;
   }
 }
 #shoppingpage {
@@ -1370,6 +1289,23 @@ nav #navbar .active {
   #shoppingpage .itemcontainer {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
     padding: 20px;
+  }
+}
+.feedback {
+  min-height: 100dvh;
+  width: 100%;
+  padding: 100px 50px 50px;
+}
+.feedback h3 {
+  font-size: clamp(40px, 5vw, 5rem);
+  font-family: "Mukta", serif;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+@media (max-width: 769px) {
+  .feedback {
+    padding: 100px 20px 50px;
   }
 }
 .cartsection {
