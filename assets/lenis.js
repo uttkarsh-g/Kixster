@@ -8,6 +8,14 @@ const lenis = new Lenis({
   touchMultiplier: 1.5,
 });
 
+document.querySelector('.menu').addEventListener('click', () => {
+  if (document.body.classList.contains('stop')) {
+    lenis.stop();
+  } else {
+    lenis.start();
+  }
+});
+
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
