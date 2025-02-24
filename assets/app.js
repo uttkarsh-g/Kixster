@@ -127,3 +127,17 @@ const showCase = () => {
   });
 };
 showCase();
+const rShow = () => {
+  let swiper = new Swiper('.cards', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    navigation: {
+      nextEl: '#fra',
+      prevEl: '#fla',
+    },
+  });
+};
+rShow();

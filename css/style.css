@@ -100,6 +100,8 @@ nav {
   height: 100px;
   padding: 0 50px;
   z-index: 99;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 nav #navbar {
   width: 100%;
@@ -560,7 +562,7 @@ nav #navbar .active {
 .about .la,
 .about .aa,
 .about .fa {
-  min-height: 100dvh;
+  height: 100dvh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -703,6 +705,32 @@ nav #navbar .active {
     color: #000;
     text-align: center;
     text-transform: capitalize;
+  }
+}
+@media (min-width: 490px) and (max-width: 768px) {
+  .hero .air img {
+    -webkit-transform: translate(-8%, 0) rotate(-22deg);
+            transform: translate(-8%, 0) rotate(-22deg);
+    height: 30%;
+  }
+  .hero .sport img {
+    height: 60%;
+  }
+  .hero .jorden img {
+    -webkit-transform: translate(-8%, 0) rotate(-22deg);
+            transform: translate(-8%, 0) rotate(-22deg);
+    height: 30%;
+  }
+  .hero .btn {
+    height: 220px;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+  .hero .btn .btns .box img {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
 }
 #about-us {
@@ -1284,8 +1312,8 @@ nav #navbar .active {
   }
 }
 .feedback {
-  min-height: 100dvh;
   width: 100%;
+  min-height: 100dvh;
   padding: 100px 50px 50px;
 }
 .feedback h3 {
@@ -1294,10 +1322,282 @@ nav #navbar .active {
   line-height: 0.9;
   text-transform: uppercase;
 }
+.feedback #fccont {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 70vh;
+}
+.feedback #fccont .swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.feedback #fccont .swiper #fla,
+.feedback #fccont .swiper #fra {
+  position: absolute;
+  background-color: rgba(44, 43, 43, 0.838);
+  padding: 10px 10px;
+  border-radius: 50%;
+  color: white;
+  font-size: larger;
+  z-index: 2;
+  cursor: pointer;
+  top: 40%;
+  -webkit-transform: translate(-45%);
+          transform: translate(-45%);
+}
+.feedback #fccont .swiper #fla {
+  left: 25px;
+}
+.feedback #fccont .swiper #fra {
+  right: -18px;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 50px;
+  text-align: center;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .rp {
+  font-size: clamp(18px, 2.2vw, 1.3rem);
+  font-family: "Inter", serif;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri .rid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri .rid .rimg {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri .rid .rimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri .rid .rname {
+  font-family: "Inter", serif;
+  font-size: 20px;
+}
+.feedback #fccont .swiper .swiper-wrapper .swiper-slide .reviews .ri .rid .rpos {
+  font-family: "Mukta", serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 3;
+}
 
-@media (max-width: 769px) {
+@media (max-width: 410px) {
   .feedback {
     padding: 100px 20px 50px;
+  }
+  .feedback #fccont .swiper #fla,
+  .feedback #fccont .swiper #fra {
+    display: none;
+  }
+  .feedback #fccont .swiper .swiper-wrapper .swiper-slide {
+    padding: 0 10px;
+  }
+}
+footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow: hidden;
+  padding: 50px;
+}
+footer .fmain {
+  text-align: center;
+}
+footer .fmain #fmcnt h1 {
+  font-family: "Inter", serif;
+  font-size: 80px;
+}
+footer .fmain #fmcnt p {
+  font-family: "Mukta", serif;
+  font-size: 20px;
+  font-weight: 200;
+}
+footer .fmain #fmlinks {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+footer .fmain #fmlinks #b,
+footer .fmain #fmlinks #d,
+footer .fmain #fmlinks #g,
+footer .fmain #fmlinks #l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+footer .fmain #fmlinks #b a,
+footer .fmain #fmlinks #d a,
+footer .fmain #fmlinks #g a,
+footer .fmain #fmlinks #l a {
+  text-decoration: none;
+  color: white;
+}
+footer .fmain #fmlinks #b a i,
+footer .fmain #fmlinks #d a i,
+footer .fmain #fmlinks #g a i,
+footer .fmain #fmlinks #l a i {
+  font-size: 30px;
+}
+footer .flinks {
+  text-align: center;
+}
+footer .flinks h3 {
+  font-size: 25px;
+  font-family: "Inter", serif;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+footer .flinks #flinkso a {
+  font-weight: 200;
+  font-family: "Mukta", serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+footer .flinks #flinkso a:hover {
+  text-decoration: underline;
+}
+footer .has {
+  text-align: center;
+}
+footer .has h3 {
+  font-size: 25px;
+  font-family: "Inter", serif;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+footer .has #flinkso a {
+  font-weight: 200;
+  font-family: "Mukta", serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  display: block;
+}
+footer .has #flinkso a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 570px) {
+  footer {
+    padding: 20px;
+  }
+  footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    overflow: hidden;
+  }
+  footer .fmain {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  footer .fmain #fmcnt h1 {
+    font-size: 60px;
+  }
+  footer .flinks {
+    width: 100%;
+    margin-top: 20px;
+  }
+  footer .has {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 570px) and (max-width: 800px) {
+  footer {
+    padding: 20px;
+  }
+  footer .has {
+    margin-top: 50px;
+    width: 100%;
+  }
+}
+@media (min-width: 800px) and (max-width: 990px) {
+  footer {
+    padding: 20px;
   }
 }
 .cartsection {

@@ -4,6 +4,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 // // // // hero
 
+gsap.to('nav', {
+  backgroundColor: '#f5f5f5',
+  scrollTrigger: {
+    trigger: 'nav',
+    scroller: 'body',
+    start: 'top -60%',
+    scrub: 1,
+  },
+});
 // gsap.from('.title h1', {
 //   delay: 0.5,
 //   y: 50,

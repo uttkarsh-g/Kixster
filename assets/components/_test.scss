@@ -1,5 +1,6 @@
 .feedback {
-  @include f;
+  width: 100%;
+  min-height: 100dvh;
   padding: 100px 50px 50px;
   h3 {
     font-size: clamp(40px, 5vw, 5rem);
@@ -7,9 +8,113 @@
     line-height: 0.9;
     text-transform: uppercase;
   }
+  #fccont {
+    width: $f;
+    @include cf;
+    height: 70vh;
+    // background-color: red;
+    .swiper {
+      width: $f;
+      height: $f;
+      position: relative;
+      #fla,
+      #fra {
+        position: absolute;
+        background-color: rgba(44, 43, 43, 0.838);
+        padding: 10px 10px;
+        border-radius: 50%;
+        color: white;
+        font-size: larger;
+        z-index: 2;
+        cursor: pointer;
+        top: 40%;
+        transform: translate(-45%);
+      }
+      #fla {
+        left: 25px;
+      }
+      #fra {
+        right: -18px;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 50px;
+          text-align: center;
+          .reviews {
+            .rp {
+              font-size: clamp(18px, 2.2vw, 1.3rem);
+              font-family: $head;
+            }
+            .ri {
+              margin-top: 20px;
+              @include cf;
+              .rid {
+                @include cf;
+                flex-direction: column;
+                .rimg {
+                  width: 80px;
+                  height: 80px;
+                  border-radius: 50%;
+                  overflow: hidden;
+                  margin-bottom: 8px;
+                  img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                  }
+                }
+                .rname {
+                  font-family: $head;
+                  font-size: 20px;
+                }
+                .rpos {
+                  font-family: $para;
+                  font-size: 16px;
+                  font-weight: 200;
+                  margin-top: 3;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
-@media (max-width: 769px) {
+// @media (max-width: 769px) {
+//   .feedback {
+//     padding: 100px 20px 50px;
+//   }
+// }
+
+@media (max-width: 410px) {
   .feedback {
     padding: 100px 20px 50px;
+    #fccont {
+      .swiper {
+        #fla,
+        #fra {
+          display: none;
+        }
+        .swiper-wrapper {
+          .swiper-slide {
+            padding: 0 10px;
+          }
+        }
+      }
+    }
   }
+}
+@media (min-width: 411px) and (max-width: 576px) {
+}
+@media (min-width: 577px) and (max-width: 768px) {
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+}
+@media (min-width: 993px) and (max-width: 1200px) {
 }

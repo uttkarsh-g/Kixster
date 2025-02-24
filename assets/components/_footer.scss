@@ -1,5 +1,140 @@
-// footer {
-//   width: $f;
-//   height: 40vh;
-//   background-color: black;
-// }
+footer {
+  width: $f;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding: 50px;
+  .fmain {
+    // width: 33%;
+    text-align: center;
+    #fmcnt {
+      h1 {
+        font-family: $head;
+        font-size: 80px;
+      }
+      p {
+        font-family: $para;
+        font-size: 20px;
+        font-weight: 200;
+      }
+    }
+    #fmlinks {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      #b,
+      #d,
+      #g,
+      #l {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        a {
+          text-decoration: none;
+          color: white;
+          i {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+  .flinks {
+    text-align: center;
+    // width: 33%;
+    h3 {
+      font-size: 25px;
+      font-family: $head;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+    #flinkso {
+      a {
+        font-weight: 200;
+        font-family: $para;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .has {
+    // width: 33%;
+    text-align: center;
+    h3 {
+      font-size: 25px;
+      font-family: $head;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+    #flinkso {
+      a {
+        font-weight: 200;
+        font-family: $para;
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        text-align: center;
+        display: block;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  footer {
+    padding: 20px;
+  }
+  footer {
+    width: $f;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    .fmain {
+      width: 100%;
+      margin-bottom: 20px;
+      #fmcnt {
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+    .flinks {
+      width: 100%;
+      margin-top: 20px;
+    }
+    .has {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+@media (min-width: 570px) and (max-width: 800px) {
+  footer {
+    padding: 20px;
+    .has {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+}
+@media (min-width: 800px) and (max-width: 990px) {
+  footer {
+    padding: 20px;
+  }
+}
