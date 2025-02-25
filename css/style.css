@@ -1429,8 +1429,11 @@ nav #navbar .active {
   font-weight: 200;
   margin-top: 3;
 }
+.feedback #fccont .swiper .swiper-scrollbar {
+  background-color: transparent;
+}
 
-@media (max-width: 410px) {
+@media (max-width: 576px) {
   .feedback {
     padding: 100px 20px 50px;
   }
@@ -1440,6 +1443,17 @@ nav #navbar .active {
   }
   .feedback #fccont .swiper .swiper-wrapper .swiper-slide {
     padding: 0 10px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .feedback {
+    padding: 100px 20px 50px;
+  }
+  .feedback #fccont .swiper .swiper-wrapper .swiper-slide {
+    padding: 0 10px;
+  }
+  .feedback #fccont .swiper .swiper-scrollbar {
+    display: none;
   }
 }
 footer {
